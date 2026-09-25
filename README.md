@@ -87,4 +87,5 @@ viewport tag; the pages are 400px wide.
 
 ## License
 
-AGPL-3.0, see [LICENSE](LICENSE) and [NOTICE](NOTICE).
+AGPL-3.0, see [LICENSE](LICENSE). Parts adapted from rverse2 are under Apache-2.0
+([LICENSES/Apache-2.0-rverse2.txt](LICENSES/Apache-2.0-rverse2.txt)); details in [NOTICE](NOTICE).

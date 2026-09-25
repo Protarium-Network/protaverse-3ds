@@ -1,8 +1,15 @@
-Protaverse 3DS runs inside an Aquamarine Portal (AquamarineMiiverseTeam) and builds on:
+Protaverse 3DS is licensed under the GNU Affero General Public License v3.0 (see LICENSE).
+It runs inside an Aquamarine Portal (AquamarineMiiverseTeam) and builds on:
 
-  - rverse2 (rverseTeam), Apache License 2.0:
-      the 3DS page markup in portal/views/ctr is adapted from its 3DS templates, and
-      portal/languages-3ds is converted from its translations (resources/lang).
+  - rverse2 by rverseTeam, licensed under the Apache License, Version 2.0
+    (full text in LICENSES/Apache-2.0-rverse2.txt). Parts derived from it, all modified:
+      * portal/views/ctr: page markup adapted from rverse2's 3DS Twig templates
+        (resources/views/3ds), rewritten as EJS for the Aquamarine Portal's data.
+      * portal/languages-3ds: converted from rverse2's PHP translations (resources/lang)
+        to JSON by tools/convert_lang.py, with Miiverse/rverse renamed to Protaverse,
+        missing strings added and some wording changed (tools/i18n_fill.json).
+      * tools/build_n3ds.py reads rverse2's public/ directory at build time; nothing from
+        it is redistributed here.
   - Aquamarine-3DS (AquamarineMiiverseTeam): first 3DS port this project started from.
 
 No proprietary Nintendo code or assets are included in this repository. The 3DS Miiverse
