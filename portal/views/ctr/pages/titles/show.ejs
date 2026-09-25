@@ -1,0 +1,35 @@
+<%- include('../../partials/layout_start', { bodyClass: 'community-top platform-3ds' }) %>
+    <%- include('../../partials/communities_header') %>
+    <div class="body-content" id="community-top">
+        <div class="community-list">
+            <div class="headline with-filter headline-3ds">
+                <h2><%= t('community.index.communities.new', 'New Communities') %></h2>
+                <div class="with-filter-right">
+                    <div class="select-button">
+                        <label id="community-filter">
+                            <span class="select-button-content"><%= t('community.index.communities.filter.name', 'Filter') %></span>
+                            <select name="filter">
+                                <option value="" selected=""><%= t('community.index.communities.filter.select', 'Please make a selection.') %></option>
+                                <option value="/communities/categories/all"><%= t('community.index.communities.filter.options.all', 'All Software') %></option>
+                                <option value="/communities/categories/3ds"><%= t('community.index.communities.platforms.3ds', '3DS Games') %></option>
+                                <option value="/communities/categories/wiiu"><%= t('community.index.communities.platforms.wiiu', 'Wii U Games') %></option>
+                                <option value="/communities/categories/vc"><%= t('community.index.communities.filter.options.vc', 'Virtual Console') %></option>
+                                <option value="/communities/categories/other"><%= t('community.index.communities.filter.options.other', 'Others') %></option>
+                            </select>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <%- include('../../partials/community_list', { communities: newest_communities }) %>
+            <a href="/communities/categories/all" class="more-button scroll" data-pjax="1"><%= t('community.index.communities.more', 'Show More') %></a>
+
+            <% if (special_communities && special_communities.length) { %>
+                <h2 class="headline headline-special"><%= t('community.index.communities.special', 'Special') %></h2>
+                <%- include('../../partials/community_list', { communities: special_communities, subtitle: t('community.index.communities.special', 'Special') }) %>
+            <% } %>
+
+            <h2 class="headline"><%= t('aqua.portal.community.popular_communities', 'Popular Communities') %></h2>
+            <%- include('../../partials/community_list', { communities: popular_communities }) %>
+        </div>
+    </div>
+<%- include('../../partials/layout_end') %>

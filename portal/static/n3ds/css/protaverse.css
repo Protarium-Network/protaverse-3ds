@@ -1,0 +1,13 @@
+/* Protaverse additions on top of Nintendo's style.css (which build_n3ds.py regenerates). */
+
+/* post page: the community's 3DS banner (400x168) on the top screen, title in the strip below */
+#header.with-ctr-banner #header-body {
+    position: relative;
+    vertical-align: bottom;
+    padding-bottom: 14px;
+}
+#header .ctr-header-banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+}

@@ -1,0 +1,8 @@
+<%- include('../../partials/layout_start', { bodyClass: 'community-top platform-3ds' }) %>
+    <%- include('../../partials/communities_header', { title: '"' + (search_query || '') + '"' }) %>
+    <div class="body-content">
+        <div class="community-list">
+            <%- include('../../partials/community_list', { communities: communities }) %>
+        </div>
+    </div>
+<%- include('../../partials/layout_end') %>

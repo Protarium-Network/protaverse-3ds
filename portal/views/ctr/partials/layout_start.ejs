@@ -1,0 +1,18 @@
+<%# Nintendo 3DS page shell. olv.js requests pages with ?_pjax=1 and only swaps #body. Close with layout_end. %>
+<% if (!locals.ctr_pjax) { %>
+<!DOCTYPE html>
+<html lang="<%= (locals.account && account[0] && account[0].language) || 'en' %>">
+<head>
+    <meta charset="utf-8">
+<% } %>
+    <title>Protaverse</title>
+<% if (!locals.ctr_pjax) { %>
+    <link rel="stylesheet" type="text/css" href="/n3ds/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/n3ds/css/protaverse.css">
+    <script src="/n3ds/js/cave-emulation.js"></script>
+    <script src="/n3ds/js/complete.js"></script>
+    <%- include('locale') %>
+</head>
+<body data-user-id="<%= (locals.account && account[0] && account[0].nnid) || '' %>" data-profile-url="<%= locals.profile_url || '/' %>">
+<% } %>
+<div id="body" class="<%= locals.bodyClass || '' %>">

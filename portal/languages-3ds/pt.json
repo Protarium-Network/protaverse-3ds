@@ -1,0 +1,283 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Confira as comunidades em busca de jogos que você joga ou que está curioso!",
+    "title": "Comunidades"
+   },
+   "favorites": "Comunidades Favoritas",
+   "search": {
+    "desc": "Pesquisar Comunidades",
+    "name": "Pesquisar"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filtro",
+     "select": "Selecione a Opção Abaixo.",
+     "options": {
+      "all": "Todos os Softwares",
+      "games": "Jogos de :console",
+      "vc": "Virtual Console",
+      "other": "Outros"
+     }
+    },
+    "new": "Novas Comunidades",
+    "special": "Especiais",
+    "platforms": {
+     "3ds": "Jogos de 3DS",
+     "wiiu": "Jogos de Wii U",
+     "wiiu-3ds": "Jogos de Wii U・Jogos de 3DS",
+     "switch": "Jogos de Switch",
+     "switch-wiiu": "Jogos de Switch・Jogos de Wii U",
+     "wii": "Jogos de Wii",
+     "ds": "Jogos de DS",
+     "wii-ds": "Jogos de Wii・Jogos de DS",
+     "special": "Comunidade Especial"
+    },
+    "empty": "Não Existem Comunidades nesta Categoria.",
+    "more": "Mostrar Mais."
+   },
+   "footer": {
+    "console": "Comunidades de :console"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filtro",
+    "select": "Selecione a Opção Abaixo.",
+    "options": {
+     "all": "Todos os Softwares",
+     "games": "Jogos de :console",
+     "vc": "Virtual Console",
+     "other": "Outros"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "Jogos de 3DS",
+     "wiiu": "Jogos de Wii U",
+     "wiiu-3ds": "Jogos de Wii U・Jogos de 3DS",
+     "switch": "Jogos de Switch",
+     "switch-wiiu": "Jogos de Switch・Jogos de Wii U",
+     "wii": "Jogos de Wii",
+     "ds": "Jogos de DS",
+     "wii-ds": "Jogos de Wii・Jogos de DS"
+    },
+    "empty": "Não Existe Comunidades nesta Categoria."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "Todos",
+    "hot": "Populares"
+   },
+   "actions": {
+    "post": "Postar",
+    "memo": "Postagens Salvas",
+    "next": "Próximo"
+   }
+  },
+  "favorites": {
+   "favorites_label": "Favoritos",
+   "software_used": "Softwares Usados"
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Erro",
+   "desc": "Essa tela não pôde ser exibida."
+  },
+  "404": {
+   "title": "Erro",
+   "desc": "Essa tela não pôde ser exibida."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Voltar",
+    "close": "Fechar",
+    "next": "Próximo"
+   },
+   "intro": {
+    "title": "Bem-vindo ao :name!",
+    "message": ":name permite que você compartilhe suas experiências de jogos com pessoas de todo o mundo!."
+   },
+   "about": {
+    "title": "Sobre o :name",
+    "message1": ":name é uma recriação do Protaverse de fãs para fãs.",
+    "message2": "Como se trata de uma recriação, ele pode não ter os mesmos recursos que o Protaverse original, e estamos trabalhando para torná-los disponíveis o mais rápido possível."
+   },
+   "config": {
+    "title": "Configurando sua conta, :name",
+    "message": "Nós precisamos de alguns dados antes de você utilizar o :name.",
+    "display_name": "Nome de Usuário",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Vamos usar seu Nintendo Network ID para buscar uma foto do seu Mii."
+   },
+   "finish": {
+    "title": "Divirta-se no :name!",
+    "start": "Começar"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name é uma comunidade de jogos que conecta pessoas de todo o mundo usando os Miis.<br>Use o :name para compartilhar experiências e conhecer novas pessoas.",
+   "message": "Você precisará de um Nintendo Network ID para criar postagens ou criar um perfil. Selecione Vincular ID para vincular um novo ou já Existente ID.",
+   "link": "Adicionar ID",
+   "exit": "Sair"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoilers"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "Esta postagem contém spoilers.",
+    "button": "Ver Postagem"
+   }
+  },
+  "meta": {
+   "empathies": "Joinhas",
+   "comments": "Comentários"
+  },
+  "extra": {
+   "more-comments": "Ver mais comentários (:count)"
+  },
+  "feelings": {
+   "normal": "Joinha!",
+   "happy": "Joinha!",
+   "like": "Joinha♥",
+   "surprised": "Joinha!?",
+   "frustrated": "Joinha...",
+   "puzzled": "Joinha...",
+   "remove": "Tirar Joinha"
+  }
+ },
+ "settings": {
+  "account": {
+   "title": "Ajustes de :name",
+   "display_language": {
+    "title": "Qual idioma você gostaria de usar no :name?",
+    "note": "Nota: Esta configuração não afeta o idioma em que as postagens foram escritos."
+   },
+   "post_language": {
+    "title": "Em que idioma você gostaria de ver postagens no :name?",
+    "note": "Nota: Esta configuração não afeta o idioma que o :name está atualmente.",
+    "all_languages": "Todos os idiomas"
+   },
+   "submit": "Salvar Ajustes"
+  },
+  "profile": {
+   "title": "Ajustes de Perfil",
+   "comment": {
+    "section_name": "Biografia",
+    "placeholder": "Escreva sobre você aqui.",
+    "note": "Atenção",
+    "note_content": "Por favor evite de incluir as seguintes informações:<br>\n- Seu endereço, número de telefone, e-mail, nome de sua escola, ou qualquer outra informação que possa identificá-lo pessoalmente. <br>\n- Links para websites externos que podem ser usados para contatá-lo diretamente.<br>\n- Qualquer outro conteúdo proibido pelo Código de conduta do :name.<br>\nPublicar essas informações é contra o Código de Conduta do :name e pode resultar na ocultação de seu perfil ao público."
+   },
+   "submit": "Salvar Ajustes"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": "Perfil de :name"
+   },
+   "meta": {
+    "violation": {
+     "select": "Por favor, selecione.",
+     "create": "Reportar",
+     "blacklist": "Bloquear"
+    },
+    "follow": "Seguir",
+    "unfollow": "Deixar de seguir",
+    "mymenu": "Menu de Usuário",
+    "settings": "Ajustes de Perfil",
+    "back": "Para o Topo"
+   },
+   "nav": {
+    "posts": "Posts",
+    "empathies": "Joinhas",
+    "following": "Seguindo",
+    "followers": "Seguidores"
+   },
+   "content": {
+    "favorite": "Comunidades Favoritas"
+   },
+   "error": {
+    "noposts": "Este usuário ainda não postou nada.",
+    "nofavorites": "Este usuário não possui comunidades favoritas."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Aqui você pode alterar vários ajustes, pesquisar outros usuários, etc.",
+    "title": "Menu de Usuário"
+   },
+   "buttons": {
+    "settings": "Ajustes do :service",
+    "blacklist": "Usuários Bloqueados",
+    "announcements": "Notícias do :service",
+    "help": "Código de conduta do :service"
+   }
+  }
+ },
+ "aqua": {
+  "language": "pt-br",
+  "portal": {
+   "community": {
+    "no_posts": "Ainda não há publicações nesta comunidade. Que tal fazer a primeira?",
+    "popular_communities": "Comunidades populares",
+    "post": {
+     "post_body_placeholder": "Compartilhe seus pensamentos com esta comunidade!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "deu um Joinha na",
+     "your_post": "sua publicação"
+    },
+    "header": "Notificações",
+    "no_news": "Você ainda não tem notificações novas.",
+    "tutorial": "Em Notificações, você vê como outras pessoas reagiram às suas publicações e comentários. Quando houver notificações novas, um ícone laranja aparece para avisar você."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "As publicações dos seus amigos e dos usuários que você segue aparecem aqui.",
+   "empty_description": "Adicione amigos ou siga usuários para preencher esta página.",
+   "empty_title": "Ainda não há atividade.",
+   "page_title": "Atividade"
+  },
+  "appeals": {
+   "notification_title": "Decisão sobre o seu recurso"
+  },
+  "moderation": {
+   "removed_notification": "Publicação excluída por um moderador"
+  },
+  "notifications": {
+   "admin_warning": "Aviso da administração",
+   "commented_post": "comentou na sua publicação.",
+   "followed_you": "começou a seguir você.",
+   "replied_discussion": "respondeu a uma discussão da qual você participa."
+  },
+  "post": {
+   "comment_action": "Comentar",
+   "comment_cancel": "Cancelar",
+   "comment_placeholder": "Escreva seu comentário..."
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s pessoas deram um Joinha nesta publicação.",
+   "%s pessoa deu um Joinha nesta publicação."
+  ],
+  "you_added": "Você deu um Joinha nesta publicação.",
+  "you_and_n_added": [
+   "Você e mais %s pessoas deram um Joinha nesta publicação.",
+   "Você e mais %s pessoa deram um Joinha nesta publicação."
+  ]
+ }
+}

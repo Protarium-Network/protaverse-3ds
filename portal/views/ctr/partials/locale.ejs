@@ -1,0 +1,28 @@
+<%#
+    Nintendo's bundle only ships English strings. Override the texts olv.js writes itself
+    with the account's language: Yeah button labels (same strings the server renders) and
+    the Yeah summary on post pages (languages-3ds/<lang>.json "js" section, [plural, singular]).
+    Values are merged into Nintendo's entries so their plural metadata is kept.
+%>
+<%
+    const overrides = {};
+    for (const feeling of ['normal', 'happy', 'like', 'surprised', 'frustrated', 'puzzled']) {
+        overrides['olv.portal.miitoo.' + feeling] = { value: t('post.feelings.' + feeling, 'Yeah!') };
+        overrides['olv.portal.miitoo.' + feeling + '.delete'] = { value: t('post.feelings.remove', 'Unyeah') };
+    }
+    const js = locals.ctr_js || {};
+    const plural = (pair) => ({ value: pair[0], value_1: pair[1] });
+    if (js.n_added) overrides['olv.portal.empathy.n_added'] = overrides['olv.portal.empathy.n_added %1'] = plural(js.n_added);
+    if (js.you_and_n_added) overrides['olv.portal.empathy.you_and_n_added'] = overrides['olv.portal.empathy.you_and_n_added %1'] = plural(js.you_and_n_added);
+    if (js.you_added) overrides['olv.portal.empathy.you_added'] = { value: js.you_added };
+%>
+<script>
+    (function (data, overrides) {
+        if (!data) return;
+        for (var key in overrides) {
+            var entry = data[key] || {};
+            for (var field in overrides[key]) entry[field] = overrides[key][field];
+            data[key] = entry;
+        }
+    })(window.Olv && Olv.Locale && Olv.Locale.Data, <%- JSON.stringify(overrides).replace(/</g, '\\u003c') %>);
+</script>

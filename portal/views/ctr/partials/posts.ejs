@@ -1,0 +1,3 @@
+<% for (const post of posts) { %>
+    <%- include('post', { post: post, showCommunity: locals.showCommunity }) %>
+<% } %>

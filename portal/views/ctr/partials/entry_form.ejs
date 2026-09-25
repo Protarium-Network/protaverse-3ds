@@ -1,0 +1,48 @@
+<%#
+    Nintendo post/reply form body. olv.js drives it (feelings, text/memo switch, submit
+    button state) and lets it submit natively. Expects `action`, `hidden` (name -> value),
+    `allowPainting`, `placeholder`. Sent urlencoded: no screenshot upload for now.
+%>
+<form method="post" action="<%= action %>" data-is-own-title="0">
+    <% for (const name of Object.keys(hidden)) { %>
+        <input type="hidden" name="<%= name %>" value="<%= hidden[name] %>">
+    <% } %>
+    <div class="add-post-page-content">
+        <div class="feeling-selector expression">
+            <ul class="buttons"><% ['normal', 'happy', 'like', 'surprised', 'frustrated', 'puzzled'].forEach(function (feeling, i) { %><li class="<%= i === 0 ? 'checked' : '' %>"><input type="radio" name="feeling_id" value="<%= i %>" class="feeling-button-<%= feeling %>"<%= i === 0 ? ' checked' : '' %> data-sound="SE_OLV_OK_SUB" autocomplete="off"></li><% }) %></ul>
+        </div>
+        <div class="textarea-with-menu active-text">
+            <% if (allowPainting) { %>
+                <menu class="textarea-menu">
+                    <li>
+                        <label class="textarea-menu-text">
+                            <input type="radio" name="_post_type" value="body" checked data-sound="SE_OLV_TEXTBOX" autocomplete="off">
+                        </label>
+                    </li>
+                    <li>
+                        <label class="textarea-menu-memo">
+                            <input type="radio" name="_post_type" value="painting" data-sound="" autocomplete="off">
+                        </label>
+                    </li>
+                </menu>
+            <% } else { %>
+                <input type="hidden" name="_post_type" value="body">
+            <% } %>
+            <label class="spoiler-button checkbox-button">
+                <%= t('post.status.spoiler', 'Spoilers') %>
+                <input type="checkbox" name="is_spoiler" value="1" data-sound="SE_OLV_CHECKBOX_CHECK" autocomplete="off">
+            </label>
+            <textarea name="body" class="textarea-text" maxlength="<%= locals.maxLength || 255 %>" cave_oninput="$(document.activeElement).trigger('input')" placeholder="<%= placeholder %>" autocomplete="off" data-preview-class="textarea-text-preview"></textarea>
+            <% if (allowPainting) { %>
+                <div class="textarea-memo trigger" data-sound="">
+                    <div class="textarea-memo-preview"></div>
+                    <input type="hidden" name="painting" disabled value="">
+                </div>
+            <% } %>
+        </div>
+        <div id="bottom-menu">
+            <input type="button" class="cancel-button fixed-bottom-button" data-sound="SE_OLV_CANCEL" value="<%= t('protarium.post.comment_cancel', 'Cancel') %>">
+            <input type="submit" class="fixed-bottom-button fixed-bottom-button-post" disabled value="<%= t('community.view.actions.post', 'Post') %>">
+        </div>
+    </div>
+</form>

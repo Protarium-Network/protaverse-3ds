@@ -1,0 +1,56 @@
+<%
+    const base = '/titles/' + community.id + '/' + community.id;
+    const popular = posts.query === 'popular';
+    const offset = Number(req.query.offset) || 0;
+    const platformTag = { '3ds': '3ds', wiiu: 'wiiu', both: 'wiiu-3ds' }[community.platform];
+%>
+<%- include('../partials/layout_start', { bodyClass: 'community-post-list' }) %>
+    <div class="title-header with-header-banner">
+        <div class="header-banner-container post-subtype-default-container">
+            <img src="/img/banners-ctr/<%= community.id %>.jpg" height="168" width="400" onerror="this.onerror=null; this.style.visibility='hidden'">
+        </div>
+        <h1 class="info-content">
+            <span class="icon-container"><img src="/img/icons/<%= community.id %>.jpg" class="icon" width="48" height="48" onerror="this.onerror=null; this.src='/img/mii_null.png'"></span>
+            <span class="title-container">
+                <span class="title"><%= community.name %></span>
+            </span>
+        </h1>
+        <% if (platformTag) { %><span class="platform-tag platform-tag-<%= platformTag %>"></span><% } %>
+    </div>
+    <div id="header-meta" class="header-meta-with-description">
+        <a href="#" class="favorite-button symbol button top-right-button<%= community.is_favorited ? ' checked' : '' %>" data-action-favorite="<%= base %>/favorite.json" data-action-unfavorite="<%= base %>/unfavorite.json"></a>
+    </div>
+    <% if (community.description) { %>
+        <div class="community-info">
+            <p class="text"><%= community.description %></p>
+        </div>
+    <% } %>
+    <div class="tab2">
+        <a id="tab-header-post" href="<%= base %>/new" data-pjax="1"<%= popular ? '' : ' class="selected"' %>><span class="symbol new-posts"><%= t('community.view.kind.new', 'All') %></span></a>
+        <a id="tab-header-hot-post" href="<%= base %>/hot" class="symbol<%= popular ? ' selected' : '' %>" data-pjax="1"><span class="name"><%= t('community.view.kind.hot', 'Popular') %></span></a>
+    </div>
+    <div class="body-content tab3-content">
+        <div id="list-content" class="post-list main-content">
+            <div class="tab-body">
+                <div class="post-buttons-content">
+                    <a href="<%= base %>/post" class="post-button js-post-button" data-pjax="1"><span class="symbol"><%= t('community.view.actions.post', 'Post') %></span></a>
+                </div>
+                <div class="post-list list" data-olv-community-id="<%= community.id %>">
+                    <% if (!posts.length) { %>
+                        <div class="no-content-window">
+                            <div class="window">
+                                <p><%= t('aqua.portal.community.no_posts', 'There are no posts yet.') %></p>
+                            </div>
+                        </div>
+                    <% } %>
+                    <%- include('../partials/posts', { posts: posts }) %>
+                </div>
+            </div>
+            <% if (posts.length >= 8) { %>
+                <p>
+                    <a href="<%= base %>/<%= popular ? 'hot' : 'new' %>?offset=<%= offset + posts.length %>" data-pjax="1" class="more-button scroll"><%= t('community.view.actions.next', 'Next') %></a>
+                </p>
+            <% } %>
+        </div>
+    </div>
+<%- include('../partials/layout_end') %>

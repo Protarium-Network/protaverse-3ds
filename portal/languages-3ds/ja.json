@@ -1,0 +1,229 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "あなたがプレイしているゲームや気になるゲームのコミュニティをチェックしてみましょう",
+    "title": "コミュニティ一覧"
+   },
+   "favorites": "お気に入りコミュニティ",
+   "search": {
+    "desc": "コミュニティ検索",
+    "name": "検索"
+   },
+   "communities": {
+    "filter": {
+     "name": "絞り込み",
+     "select": "選択してください。",
+     "options": {
+      "all": "すべてのソフトウェア",
+      "games": ":console のゲーム",
+      "vc": "バーチャルコンソール",
+      "other": "その他"
+     }
+    },
+    "new": "新着コミュニティ",
+    "special": "特設",
+    "platforms": {
+     "3ds": "3DSのゲーム",
+     "wiiu": "Wii Uのゲーム",
+     "wiiu-3ds": "Wii U ・3DSのゲーム",
+     "switch": "Switchのゲーム",
+     "switch-wiiu": "Switch・Wii Uのゲーム",
+     "wii": "Wiiのゲーム",
+     "ds": "DSのゲーム",
+     "wii-ds": "Wii・DSのゲーム",
+     "special": "特設コミュニティ"
+    },
+    "empty": "カテゴリに該当するコミュニティはありません。",
+    "more": "もっと見る"
+   },
+   "footer": {
+    "console": ":console のコミュニティ"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "絞り込み",
+    "select": "選択してください",
+    "options": {
+     "all": "すべてのソフトウェア",
+     "games": ":console のゲーム",
+     "vc": "バーチャルコンソール",
+     "other": "その他"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DSのゲーム",
+     "wiiu": "Wii Uのゲーム",
+     "wiiu-3ds": "Wii U・3DSのゲーム",
+     "switch": "Switchのゲーム",
+     "switch-wiiu": "Switch・Wii Uのゲーム",
+     "wii": "Wiiのゲーム",
+     "ds": "DSのゲーム",
+     "wii-ds": "Wii・DSのゲーム"
+    },
+    "empty": "カテゴリに該当するコミュニティはありません。"
+   }
+  },
+  "view": {
+   "actions": {
+    "next": "次へ",
+    "post": "投稿する"
+   },
+   "kind": {
+    "hot": "人気",
+    "new": "すべて"
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "エラー",
+   "desc": "このページは表示できません。"
+  },
+  "404": {
+   "title": "エラー",
+   "desc": "このページは表示できません。"
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "もどる",
+    "close": "閉じる",
+    "next": "次へ"
+   },
+   "intro": {
+    "title": ":name へようこそ！",
+    "message": ":name は、ゲーム内での経験を世界中の人と共有することができます。"
+   },
+   "about": {
+    "title": ":name について",
+    "message1": ":name はファンがファンのために作ったMiiverseを再現したものです。",
+    "message2": "これはレクリエーションなので、Miiverseとは機能が異なる可能性がありますが、できるだけ早く提供できるように努力しています。"
+   },
+   "config": {
+    "title": ":name のアカウントを設定する",
+    "message": ":name を使用する前に、あなたの情報が必要です。",
+    "display_name": "表示名",
+    "nnid": "ニンテンドーネットワークID",
+    "nnid_label": "ニンテンドーネットワークIDは、あなたのMii画像を取得することだけに使用されます。"
+   },
+   "finish": {
+    "title": ":name をお楽しみください！",
+    "start": "はじめる"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name は、Miiのキャラクターを使って世界中の人をつなぐゲームコミュニティです。<br> :name を使って、あなたのゲーム体験を共有し、世界中の人と出会いましょう。",
+   "message": "投稿の作成やプロフィールの作成にはニンテンドーネットワークIDが必要です。IDを連携すると新規または既存のIDを連携することができます。",
+   "link": "IDを連携する",
+   "exit": "終了"
+  }
+ },
+ "aqua": {
+  "language": "ja",
+  "portal": {
+   "community": {
+    "no_posts": "No posts have been made for this community, why don't you try making one?",
+    "popular_communities": "人気のコミュニティ",
+    "post": {
+     "post_body_placeholder": "Share your thoughts to this community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gave a Yeah to",
+     "your_post": "your post"
+    },
+    "header": "お知らせ",
+    "no_news": "You have no new notifications yet.",
+    "tutorial": "In Notifications, you can find out how other people have reacted to your posts or comments, and see if you have any pending friend requests. If you have new notifications, an orange icon will appear to let you know."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Posts from your friends and users you follow appear here.",
+   "empty_description": "Add friends or follow users to fill this page.",
+   "empty_title": "アクティビティはまだありません。",
+   "page_title": "みんなの活動"
+  },
+  "appeals": {
+   "notification_title": "申し立てに関する決定"
+  },
+  "moderation": {
+   "removed_notification": "Post deleted by a moderator"
+  },
+  "notifications": {
+   "admin_warning": "Administrator Warning",
+   "commented_post": "commented on your post.",
+   "followed_you": "followed you.",
+   "replied_discussion": "replied to a discussion you participated in."
+  },
+  "post": {
+   "comment_action": "コメント",
+   "comment_cancel": "キャンセル",
+   "comment_placeholder": "コメントを入力…"
+  }
+ },
+ "post": {
+  "content": {
+   "spoiler": {
+    "button": "投稿を見る",
+    "desc": "この投稿にはネタバレが含まれています。"
+   }
+  },
+  "feelings": {
+   "normal": "そうだね",
+   "happy": "そうだね！",
+   "like": "そうだね♥",
+   "surprised": "そうだね!?",
+   "frustrated": "そうだね…",
+   "puzzled": "そうだね…",
+   "remove": "取り消す"
+  },
+  "meta": {
+   "comments": "コメント",
+   "empathies": "そうだね"
+  },
+  "status": {
+   "spoiler": "ネタバレ"
+  }
+ },
+ "user": {
+  "profile": {
+   "content": {
+    "favorite": "お気に入りコミュニティ"
+   },
+   "error": {
+    "noposts": "このユーザーはまだ投稿していません。"
+   },
+   "header": {
+    "name": ":nameのプロフィール"
+   },
+   "meta": {
+    "back": "トップへ",
+    "follow": "フォローする",
+    "unfollow": "フォロー解除"
+   },
+   "nav": {
+    "followers": "フォロワー",
+    "following": "フォロー中",
+    "posts": "投稿"
+   }
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s人がそうだねと言っています。",
+   "%s人がそうだねと言っています。"
+  ],
+  "you_added": "あなたがそうだねと言いました。",
+  "you_and_n_added": [
+   "あなたと他%s人がそうだねと言っています。",
+   "あなたと他%s人がそうだねと言っています。"
+  ]
+ }
+}

@@ -1,0 +1,13 @@
+<%- include('partials/layout_start', { bodyClass: 'add-post-page' }) %>
+    <%- include('partials/form_header', { kind: t('community.view.actions.post', 'Post') }) %>
+    <div class="body-content">
+        <div id="form-content">
+            <%- include('partials/entry_form', {
+                action: '/posts',
+                hidden: { kind: 'post', olive_community_id: community.id },
+                allowPainting: true,
+                placeholder: t('aqua.portal.community.post.post_body_placeholder', 'Share your thoughts in a post to this community.')
+            }) %>
+        </div>
+    </div>
+<%- include('partials/layout_end') %>

@@ -1,0 +1,154 @@
+{
+ "aqua": {
+  "language": "pl",
+  "portal": {
+   "community": {
+    "no_posts": "No posts have been made for this community, why don't you try making one?",
+    "popular_communities": "Popularne społeczności",
+    "post": {
+     "post_body_placeholder": "Share your thoughts to this community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gave a Yeah to",
+     "your_post": "your post"
+    },
+    "header": "Powiadomienia",
+    "no_news": "You have no new notifications yet.",
+    "tutorial": "In Notifications, you can find out how other people have reacted to your posts or comments, and see if you have any pending friend requests. If you have new notifications, an orange icon will appear to let you know."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Posts from your friends and users you follow appear here.",
+   "empty_description": "Add friends or follow users to fill this page.",
+   "empty_title": "Brak aktywności.",
+   "page_title": "Aktywność"
+  },
+  "appeals": {
+   "notification_title": "Decyzja w sprawie odwołania"
+  },
+  "moderation": {
+   "removed_notification": "Post deleted by a moderator"
+  },
+  "notifications": {
+   "admin_warning": "Administrator Warning",
+   "commented_post": "commented on your post.",
+   "followed_you": "followed you.",
+   "replied_discussion": "replied to a discussion you participated in."
+  },
+  "post": {
+   "comment_action": "Skomentuj",
+   "comment_cancel": "Anuluj",
+   "comment_placeholder": "Napisz komentarz…"
+  }
+ },
+ "community": {
+  "index": {
+   "communities": {
+    "empty": "W tej kategorii nie ma żadnych społeczności.",
+    "filter": {
+     "name": "Filtr",
+     "options": {
+      "all": "Całe oprogramowanie",
+      "other": "Inne",
+      "vc": "Virtual Console"
+     },
+     "select": "Wybierz opcję."
+    },
+    "more": "Pokaż więcej",
+    "new": "Nowe społeczności",
+    "platforms": {
+     "3ds": "Gry na 3DS",
+     "wiiu": "Gry na Wii U",
+     "wiiu-3ds": "Gry na Wii U・Gry na 3DS"
+    },
+    "special": "Specjalne"
+   },
+   "favorites": "Ulubione społeczności",
+   "header": {
+    "desc": "Odwiedzaj społeczności gier, w które grasz albo które cię ciekawią!",
+    "title": "Społeczności"
+   },
+   "search": {
+    "desc": "Szukaj społeczności",
+    "name": "Szukaj"
+   }
+  },
+  "view": {
+   "actions": {
+    "next": "Dalej",
+    "post": "Opublikuj"
+   },
+   "kind": {
+    "hot": "Popularne",
+    "new": "Wszystkie"
+   }
+  }
+ },
+ "errors": {
+  "404": {
+   "desc": "Nie można wyświetlić tego ekranu."
+  }
+ },
+ "post": {
+  "content": {
+   "spoiler": {
+    "button": "Pokaż wpis",
+    "desc": "Ten wpis zawiera spoilery."
+   }
+  },
+  "feelings": {
+   "normal": "Yeah!",
+   "happy": "Yeah!",
+   "like": "Yeah♥",
+   "surprised": "Yeah!?",
+   "frustrated": "Yeah...",
+   "puzzled": "Yeah...",
+   "remove": "Cofnij Yeah"
+  },
+  "meta": {
+   "comments": "Komentarze",
+   "empathies": "Yeah"
+  },
+  "status": {
+   "spoiler": "Spoilery"
+  }
+ },
+ "user": {
+  "profile": {
+   "content": {
+    "favorite": "Ulubione społeczności"
+   },
+   "error": {
+    "noposts": "Ten użytkownik nie opublikował jeszcze żadnego wpisu."
+   },
+   "header": {
+    "name": "Profil użytkownika :name"
+   },
+   "meta": {
+    "back": "Na górę",
+    "follow": "Obserwuj",
+    "unfollow": "Przestań obserwować"
+   },
+   "nav": {
+    "followers": "Obserwujący",
+    "following": "Obserwowani",
+    "posts": "Wpisy"
+   }
+  }
+ },
+ "js": {
+  "n_added": [
+   "Liczba osób, które dały Yeah: %s.",
+   "%s osoba dała temu wpisowi Yeah."
+  ],
+  "you_added": "Dałeś(-aś) temu wpisowi Yeah.",
+  "you_and_n_added": [
+   "Ty i inne osoby (%s) daliście temu wpisowi Yeah.",
+   "Ty i %s inna osoba daliście temu wpisowi Yeah."
+  ]
+ }
+}

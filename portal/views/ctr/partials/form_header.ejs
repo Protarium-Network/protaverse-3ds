@@ -1,0 +1,16 @@
+<%# Header of the post/reply forms: small banner with the form kind + community name. %>
+<div class="title-header with-header-banner">
+    <div class="header-banner-container post-subtype-default-container">
+        <div class="post-form-header">
+            <span class="post-subtype-default"><%= kind %></span>
+        </div>
+    </div>
+    <h1 class="info-content">
+        <span class="icon-container">
+            <img src="/img/icons/<%= community.id %>.jpg" class="icon" width="48" height="48" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+        </span>
+        <span class="title-container">
+            <span class="title"><%= community.name %></span>
+        </span>
+    </h1>
+</div>

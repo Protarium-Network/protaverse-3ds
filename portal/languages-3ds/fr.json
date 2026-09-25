@@ -1,0 +1,220 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Consultez les communautés pour connaître les jeux auxquels vous jouez ou ceux qui vous intéressent !",
+    "title": "Communautés"
+   },
+   "favorites": "Communautés préférées",
+   "search": {
+    "desc": "Recherche de communautés",
+    "name": "Chercher"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filtre",
+     "select": "Choisissez un filtre.",
+     "options": {
+      "all": "Tous les logiciels",
+      "games": "Jeux (Console)",
+      "vc": "Console Virtuelle",
+      "other": "Autres"
+     }
+    },
+    "new": "Nouvelles communautés",
+    "special": "Spécial",
+    "platforms": {
+     "3ds": "Jeux 3DS",
+     "wiiu": "Jeux Wii U",
+     "wiiu-3ds": "Jeux Wii U ・ Jeux 3DS",
+     "switch": "Jeux Switch",
+     "switch-wiiu": "Jeux Switch ・ Jeux Wii U",
+     "wii": "Jeux Wii",
+     "ds": "Jeux DS",
+     "wii-ds": "Jeux Wii・ Jeux DS",
+     "special": "Communauté Spéciale"
+    },
+    "empty": "Il n'y a pas de communautés dans cette catégorie.",
+    "more": "Afficher plus"
+   },
+   "footer": {
+    "console": "Communautés :console"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filtre",
+    "select": "Choisissez un filtre.",
+    "options": {
+     "all": "Tous les logiciels",
+     "games": "Jeux (Console)",
+     "vc": "Console Virtuelle",
+     "other": "Autres"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "Jeux 3DS",
+     "wiiu": "Jeux Wii U",
+     "wiiu-3ds": "Jeux Wii U・Jeux 3DS",
+     "switch": "Jeux Switch",
+     "switch-wiiu": "Jeux Switch・ Jeux Wii U",
+     "wii": "Jeux Wii",
+     "ds": "Jeux DS",
+     "wii-ds": "Jeux Wii・ Jeux DS",
+     "special": "Communauté spéciale"
+    },
+    "empty": "Il n'y a pas de communautés dans cette catégorie."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "Tous",
+    "hot": "Populaires"
+   },
+   "actions": {
+    "post": "Publier",
+    "memo": "Brouillons",
+    "next": "Suivant"
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Erreur",
+   "desc": "La page n'a pas pu être affichée"
+  },
+  "404": {
+   "title": "Erreur",
+   "desc": "La page n'a pas pu être affichée"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoilers"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "Cette publication contient des révélations..",
+    "button": "Voir la Publication"
+   }
+  },
+  "meta": {
+   "empathies": "Ouais",
+   "comments": "Commentaires"
+  },
+  "extra": {
+   "more-comments": "Afficher plus de Commentaires (:count)"
+  },
+  "feelings": {
+   "normal": "Ouais !",
+   "happy": "Ah Ouais !",
+   "like": "Ouais♥",
+   "surprised": "Oh Ouais ?!",
+   "frustrated": "Mouais...",
+   "puzzled": "Ouais...!",
+   "remove": "Retirer"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": "Profil de :name"
+   },
+   "meta": {
+    "violation": {
+     "select": "Sélectionnez une option.",
+     "create": "Signaler",
+     "blacklist": "Bloquer"
+    },
+    "follow": "Suivre",
+    "unfollow": "Ne plus Suivre",
+    "mymenu": "Menu d'Utilisateur",
+    "settings": "Paramètres du Profil",
+    "back": "En haut"
+   },
+   "nav": {
+    "posts": "Publications",
+    "empathies": "Ouais",
+    "following": "Abonnements",
+    "followers": "Abonnés"
+   },
+   "content": {
+    "favorite": "Communautés Favorites"
+   },
+   "error": {
+    "noposts": "Cet utilisateur n'a pas encore fait de publication.",
+    "nofavorites": "Cet utilisateur n'a aucune communauté favorite."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Ici, vous pouvez changer certaines options, chercher des utilisateurs, et plus.",
+    "title": "Menu d'Utilisateur"
+   },
+   "buttons": {
+    "settings": ":service Paramètres",
+    "blacklist": "Utilisateurs Bloqués",
+    "announcements": ":service Annonces",
+    "help": "Manuel/:service Code de Conduite"
+   }
+  }
+ },
+ "aqua": {
+  "language": "fr",
+  "portal": {
+   "community": {
+    "no_posts": "Aucun message n'a été fait sur cette communauté. Pourquoi vous n'essayerez pas d'en faire un ?",
+    "popular_communities": "Communautés populaires",
+    "post": {
+     "post_body_placeholder": "Écrivez vos pensées vers un message sur cette communauté !"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "a donné un Ouais à",
+     "your_post": "votre message"
+    },
+    "header": "Notifications",
+    "no_news": "Vous n'avez aucune notification.",
+    "tutorial": "Dans Notifications, vous pouvez savoir comment les personnes ont réagi à vos messages ou commentaires, et voir si vous avez des demandes d'amis en attente. Si vous avez de nouvelles notifications, une icône orange apparaîtra pour vous en informer."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Les publications de vos amis et des utilisateurs auxquels vous êtes abonné apparaissent ici.",
+   "empty_description": "Ajoutez des amis ou abonnez-vous à des utilisateurs pour remplir cette page.",
+   "empty_title": "Aucune activité pour le moment.",
+   "page_title": "Suivi des activités"
+  },
+  "appeals": {
+   "notification_title": "Décision concernant votre appel"
+  },
+  "moderation": {
+   "removed_notification": "Post supprimé par un modérateur"
+  },
+  "notifications": {
+   "admin_warning": "Avertissement de l'administration",
+   "commented_post": "a commenté votre publication.",
+   "followed_you": "s'est abonné à vous.",
+   "replied_discussion": "a répondu à une discussion à laquelle vous participez."
+  },
+  "post": {
+   "comment_action": "Commenter",
+   "comment_cancel": "Annuler",
+   "comment_placeholder": "Écrivez votre commentaire..."
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s personnes ont donné un Ouais.",
+   "%s personne a donné un Ouais."
+  ],
+  "you_added": "Vous avez donné un Ouais.",
+  "you_and_n_added": [
+   "Vous et %s autres personnes avez donné un Ouais.",
+   "Vous et %s autre personne avez donné un Ouais."
+  ]
+ }
+}

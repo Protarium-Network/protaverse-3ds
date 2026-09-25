@@ -1,0 +1,17 @@
+<%
+    const filterNames = {
+        all: t('community.index.communities.filter.options.all', 'All Software'),
+        '3ds': t('community.index.communities.platforms.3ds', '3DS Games'),
+        wiiu: t('community.index.communities.platforms.wiiu', 'Wii U Games'),
+        vc: t('community.index.communities.filter.options.vc', 'Virtual Console'),
+        other: t('community.index.communities.filter.options.other', 'Others')
+    };
+%>
+<%- include('../../partials/layout_start', { bodyClass: 'community-top platform-3ds' }) %>
+    <%- include('../../partials/communities_header', { title: filterNames[locals.platform_filter] || filterNames.all }) %>
+    <div class="body-content">
+        <div class="community-list">
+            <%- include('../../partials/community_list', { communities: communities }) %>
+        </div>
+    </div>
+<%- include('../../partials/layout_end') %>

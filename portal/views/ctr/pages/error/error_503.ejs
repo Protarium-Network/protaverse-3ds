@@ -1,0 +1,10 @@
+<%- include('../../partials/layout_start', { bodyClass: 'warning-page' }) %>
+    <div class="no-content-window">
+        <div class="window">
+            <p><%= t('errors.404.desc', 'The screen could not be displayed.') %></p>
+            <div class="window-bottom-buttons">
+                <a href="/communities" class="button" data-pjax="1"><%= t('community.index.header.title', 'Communities') %></a>
+            </div>
+        </div>
+    </div>
+<%- include('../../partials/layout_end') %>

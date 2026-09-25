@@ -1,0 +1,50 @@
+<%
+    const time = (d) => moment(d).locale(t('aqua.language', 'en')).fromNow();
+    const describe = (n) => ({
+        yeah: t('aqua.portal.news.content.gave_yeah', 'gave a Yeah to') + ' ' + t('aqua.portal.news.content.your_post', 'your post'),
+        follow: t('protarium.notifications.followed_you', 'followed you.'),
+        comment: t('protarium.notifications.commented_post', 'commented on your post.'),
+        discussion_reply: t('protarium.notifications.replied_discussion', 'replied to a discussion.'),
+        admin_warning: t('protarium.notifications.admin_warning', 'Administration warning'),
+        moderator_post_removed: t('protarium.moderation.removed_notification', 'A post was removed by moderation.'),
+        moderation_appeal: t('protarium.appeals.notification_title', 'Appeal update')
+    })[n.type] || '';
+    const detail = (n) => n.type === 'yeah' ? (n.post_body ? n.post_body.slice(0, 40) : '')
+        : (n.type === 'comment' || n.type === 'discussion_reply') ? (n.reply_body || '').slice(0, 60)
+        : n.type === 'admin_warning' ? n.warning_message
+        : n.type === 'moderator_post_removed' ? n.moderation_details
+        : n.type === 'moderation_appeal' ? (n.appeal_response || n.appeal_status) : '';
+%>
+<%- include('../partials/layout_start', { bodyClass: 'news-page' }) %>
+    <%- include('../partials/text_header', {
+        title: t('aqua.portal.news.header', 'Notifications'),
+        description: t('aqua.portal.news.tutorial', "Here you can see if you've gotten a response or reaction from other users.")
+    }) %>
+    <div class="body-content">
+        <div class="tab-body">
+            <% if (!notifications || !notifications.length) { %>
+                <div class="no-content-window">
+                    <div class="window"><p><%= t('aqua.portal.news.no_news', 'No updates.') %></p></div>
+                </div>
+            <% } else { %>
+                <ul class="list-content-with-icon-and-text arrow-list" id="news-list-content">
+                    <% for (const n of notifications) { %>
+                        <li<%= n.read == 0 ? ' class="notify"' : '' %>>
+                            <a href="/users/<%= encodeURIComponent(n.nnid || '') %>" data-pjax="#body" class="icon-container<%= n.read == 0 ? ' notify' : '' %>">
+                                <img src="/mii/<%= n.pid || n.nnid || 'default' %>/normal.png" class="icon" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+                            </a>
+                            <a href="<%= n.linkto %>" data-pjax="#body" class="arrow-button scroll"></a>
+                            <div class="body">
+                                <p class="text">
+                                    <span class="nick-name"><%= n.mii_name || n.nnid || 'Protaverse' %></span> <%= describe(n) %>
+                                    <% if (detail(n)) { %><span class="link"><%= detail(n) %></span><% } %>
+                                    <span class="timestamp"><%= time(n.create_time) %></span>
+                                </p>
+                            </div>
+                        </li>
+                    <% } %>
+                </ul>
+            <% } %>
+        </div>
+    </div>
+<%- include('../partials/layout_end') %>

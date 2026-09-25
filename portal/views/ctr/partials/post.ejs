@@ -1,0 +1,83 @@
+<%#
+    One post in a list (Nintendo's standard_post). Expects `post` with the Portal's usual
+    columns (posts.* + pid, nnid, mii_name, verified, empathy_count, empathied_by_user)
+    and `showCommunity` to prefix the community name (activity feed).
+%>
+<%
+    const feelings = ['normal', 'happy', 'like', 'surprised', 'frustrated', 'puzzled'];
+    const feeling = feelings[Number(post.feeling_id)] || 'normal';
+    const spoiler = Number(post.spoiler) === 1;
+    const official = post.verified || post.admin;
+    const painting = post.painting_cdn_url || (post.painting && String(post.painting).startsWith('/') ? post.painting : null);
+    // 3DS-sized copy of local screenshots (routes/ctr.js), the originals are too heavy for the applet
+    const screenshot = (post.screenshot_cdn_url || (post.screenshot && String(post.screenshot).startsWith('/') ? post.screenshot : '') || '')
+        .replace(/^\/img\/screenshots\//, '/img-ctr/screenshots/') || null;
+    const isOwn = locals.account && account[0] && Number(post.account_id) === Number(account[0].id);
+    const postUrl = '/posts/' + post.id;
+    const userUrl = '/users/' + encodeURIComponent(post.nnid || '');
+%>
+<div id="post-<%= post.id %>" class="post scroll post-subtype-default<%= spoiler ? ' hidden' : '' %><%= official ? ' official-user' : '' %>" data-href="<%= postUrl %>"<% if (spoiler) { %> data-href-hidden="<%= postUrl %>"<% } %>>
+    <% if (locals.showCommunity && post.community_name) { %>
+        <p class="community-container">
+            <a href="/titles/<%= post.community_id %>/<%= post.community_id %>" class="test-post-target-href" data-pjax="1">
+                <span class="community-container-inner">
+                    <img src="/img/icons/<%= post.community_id %>.jpg" class="community-icon" width="14" height="14" onerror="this.onerror=null; this.src='/img/mii_null.png'"><%= post.community_name %>
+                </span>
+            </a>
+        </p>
+    <% } %>
+    <div class="body">
+        <a href="<%= userUrl %>" data-pjax="1" class="user-icon-container scroll-focus<%= official ? ' official-user' : '' %>">
+            <img src="/mii/<%= post.pid || post.nnid || 'default' %>/<%= feeling %>.png" class="user-icon" width="32" height="32" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+        </a>
+        <div class="post-container">
+            <div class="user-container">
+                <p class="user-name"><a href="<%= userUrl %>" data-pjax="1"><%= post.mii_name || post.nnid %></a></p>
+                <p class="timestamp-container">
+                    <span class="timestamp"><%= moment(post.create_time).locale(t('aqua.language', 'en')).fromNow() %></span>
+                    <% if (spoiler) { %>
+                        · <span class="spoiler"><%= t('post.status.spoiler', 'Spoilers') %></span>
+                    <% } %>
+                </p>
+            </div>
+            <div class="post-content">
+                <% if (post.topic_tag) { %>
+                    <p class="post-tag"><%= post.topic_tag %></p>
+                <% } %>
+                <% if (post.body) { %>
+                    <p class="post-content-text">
+                        <a href="<%= postUrl %>" class="to-permalink-button" data-pjax="1" tabindex="0"><%= post.body %></a>
+                    </p>
+                <% } %>
+                <% if (screenshot) { %>
+                    <a href="<%= postUrl %>" class="screenshot-container still-image" data-pjax="1"><img src="<%= screenshot %>" height="96"></a>
+                <% } %>
+                <% if (!post.body && painting) { %>
+                    <p class="post-content-memo">
+                        <a href="<%= postUrl %>" class="to-permalink-button" data-pjax="1" tabindex="0"><img src="<%= painting %>"></a>
+                    </p>
+                <% } %>
+                <% if (spoiler) { %>
+                    <div class="hidden-content"><p><%= t('post.content.spoiler.desc', 'This post contains spoilers.') %></p>
+                        <button type="button" class="hidden-content-button"><%= t('post.content.spoiler.button', 'View Post') %></button>
+                    </div>
+                <% } %>
+            </div>
+            <div class="post-meta">
+                <button type="button"<%= isOwn ? ' disabled' : '' %> class="symbol submit empathy-button<%= isOwn ? ' disabled' : '' %><%= post.empathied_by_user ? ' empathy-added' : '' %>" data-feeling="<%= feeling %>" data-action="<%= postUrl %>/empathies">
+                    <span class="empathy-button-text"><%= post.empathied_by_user ? t('post.feelings.remove', 'Unyeah') : t('post.feelings.' + feeling, 'Yeah!') %></span>
+                </button>
+                <span class="empathy symbol">
+                    <span class="symbol-label"><%= t('post.meta.empathies', 'Yeahs') %></span>
+                    <span class="empathy-count"><%= post.empathy_count || 0 %></span>
+                </span>
+                <a href="<%= postUrl %>" data-pjax="1" tabindex="0">
+                    <span class="reply symbol">
+                        <span class="symbol-label"><%= t('post.meta.comments', 'Comments') %></span>
+                        <span class="reply-count"><%= post.reply_count || 0 %></span>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

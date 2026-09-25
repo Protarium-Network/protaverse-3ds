@@ -1,0 +1,115 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Sjekk ut de samfunnene for spill som du spiller eller spill som du er nysgjerrig i!",
+    "title": "Samfunn"
+   },
+   "favorites": "Favoritt Samfunn",
+   "search": {
+    "desc": "Søk i Samfunn",
+    "name": "Søk"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filter",
+     "select": "Gjør et valg.",
+     "options": {
+      "all": "All programvare",
+      "games": ":console-spill",
+      "vc": "Virtuell Konsoll",
+      "other": "Andre"
+     }
+    },
+    "new": "Nye Samfunn",
+    "special": "Spesiell",
+    "platforms": {
+     "3ds": "3DS-spill",
+     "wiiu": "Wii U-spill",
+     "wiiu-3ds": "Wii U-spill・3DS-spill",
+     "switch": "Switch-spill",
+     "switch-wiiu": "Switch-spill・Wii U-spill",
+     "wii": "Wii-spill",
+     "ds": "DS-spill",
+     "wii-ds": "Wii-spill・DS-spill",
+     "special": "Spesielt Samfunn"
+    },
+    "empty": "Det er ingen samfunn i denne kategorien.",
+    "more": "Vis Mer"
+   },
+   "footer": {
+    "console": ":console Samfunn"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filter",
+    "select": "Gjør et valg.",
+    "options": {
+     "all": "All Programvare",
+     "games": ":console-spill",
+     "vc": "Virtuell Konsoll",
+     "other": "Andre"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DS-spill",
+     "wiiu": "Wii U-spill",
+     "wiiu-3ds": "Wii U-spill・3DS-spill",
+     "switch": "Switch-spill",
+     "switch-wiiu": "Switch-spill・Wii U-spill",
+     "wii": "Wii-spill",
+     "ds": "DS-spill",
+     "wii-ds": "Wii-spill・DS-spill"
+    },
+    "empty": "Det er ingen samfunn i denne kategorien."
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Feil",
+   "desc": "Skjermen kunne ikke vises."
+  },
+  "404": {
+   "title": "Feil",
+   "desc": "Skjermen kunne ikke vises."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Tilbake",
+    "close": "Lukk",
+    "next": "Neste"
+   },
+   "intro": {
+    "title": "Velkommen til :name!",
+    "message": ":name lar deg dele dine opplevelser i spillet med mennesker fra hele verden."
+   },
+   "about": {
+    "title": "Om :name",
+    "message1": ":name er en rekreasjon av Protaverse laget av fans for fans.",
+    "message2": "Siden dette er en rekreasjon, har den kanskje ikke de samme funksjonene som den nedlagte Protaverse, og vi jobber med å gjøre dem tilgjengelige så snart som mulig."
+   },
+   "config": {
+    "title": "Konfigurere :name-kontoen din",
+    "message": "Vi trenger noen data fra deg før du kan begynne å bruke :name.",
+    "display_name": "Visningsnavn",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Vi bruker din Nintendo Network ID for å hente ditt Mii-bilde."
+   },
+   "finish": {
+    "title": "Ha det gøy i :name!",
+    "start": "Start"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name er et spillsamfunn som kobler mennesker fra hele verden ved hjelp av Mii-tegn. <br>Bruk :name for å dele dine spillopplevelser og møte mennesker fra hele verden.",
+   "message": "Du trenger en Nintendo Network ID for å opprette innlegg eller opprette en profil. Velg Link ID for å koble en ny eller eksisterende ID.",
+   "link": "Link ID",
+   "exit": "Exit"
+  }
+ }
+}

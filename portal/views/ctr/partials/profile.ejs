@@ -1,0 +1,29 @@
+<%# Profile top page shared by users_@me and users_visitor. %>
+<% const favorites = (view_account.favorited_communities || []).slice(0, 6); %>
+<%- include('layout_start', { bodyClass: 'user-page' }) %>
+    <%- include('user_header', { u: view_account, isMe: isMe, section: '' }) %>
+    <div class="body-content">
+        <div class="profile-content">
+            <% if (view_account.bio) { %>
+                <div class="profile-comment">
+                    <p class="js-truncated-text"><%= view_account.bio %></p>
+                </div>
+            <% } %>
+            <div class="favorite-communities">
+                <h2 class="headline headline-special"><%= t('user.profile.content.favorite', 'Favorite Communities') %></h2>
+                <div class="communities-content">
+                    <% for (const favorite of favorites) { %>
+                        <span class="favorite-community">
+                            <a href="/titles/<%= favorite.community_id %>/<%= favorite.community_id %>" data-pjax="1">
+                                <span class="icon-container"><img class="icon" src="/img/icons/<%= favorite.community_id %>.jpg" onerror="this.onerror=null; this.src='/img/mii_null.png'"></span>
+                            </a>
+                        </span>
+                    <% } %>
+                    <% for (let i = favorites.length; i < 6; i++) { %>
+                        <span class="favorite-community empty-community"><span class="icon-container"></span></span>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+<%- include('layout_end') %>

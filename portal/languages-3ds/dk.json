@@ -1,0 +1,115 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Tjek fælleskaberne for spil du Spiller, eller spil du er interreseret i!",
+    "title": "Fællesskaber"
+   },
+   "favorites": "Yndlingsfælleskaber",
+   "search": {
+    "desc": "Søg efter fælleskaber",
+    "name": "Søg"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filter",
+     "select": "Venligst foretag valg.",
+     "options": {
+      "all": "Alt Software",
+      "games": ":console Spil",
+      "vc": "Virtuel Konsol",
+      "other": "Andre"
+     }
+    },
+    "new": "Nye fælleskaber",
+    "special": "Specielle",
+    "platforms": {
+     "3ds": "3DS Spill",
+     "wiiu": "Wii U Spill",
+     "wiiu-3ds": "Wii U Spill・3DS Spill",
+     "switch": "Switch Spill",
+     "switch-wiiu": "Switch Spill・Wii U Spill",
+     "wii": "Wii Spill",
+     "ds": "DS Spill",
+     "wii-ds": "Wii Spill・DS Spill",
+     "special": "Special Community"
+    },
+    "empty": "Der er ingen fælleskaber i denne kategori.",
+    "more": "Vis Mere"
+   },
+   "footer": {
+    "console": ":console Fælleskaber"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filter",
+    "select": "Venligst foretag valg.",
+    "options": {
+     "all": "Alt Software",
+     "games": ":console Spill",
+     "vc": "Virtuel Konsol",
+     "other": "Andre"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DS Spill",
+     "wiiu": "Wii U Spill",
+     "wiiu-3ds": "Wii U Spill・3DS Spill",
+     "switch": "Switch Spill",
+     "switch-wiiu": "Switch Spill・Wii U Spill",
+     "wii": "Wii Spill",
+     "ds": "DS Spill",
+     "wii-ds": "Wii Spill・DS Spill"
+    },
+    "empty": "Der er ingen fælleskaber i denne kategori."
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Fejl",
+   "desc": "Denne skærm kunne ikke vises."
+  },
+  "404": {
+   "title": "Fejl",
+   "desc": "Denne skærm kunne ikke vises."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Tilbage",
+    "close": "Luk",
+    "next": "Næste"
+   },
+   "intro": {
+    "title": "Velkommen til :name!",
+    "message": ":name lader dig dele dine spiloplevelser med folk fra hele verden."
+   },
+   "about": {
+    "title": "Om :name",
+    "message1": ":name er en rekreation af Protaverse lavet af fans, til fans.",
+    "message2": "Da dette er en rekreation, har den muligvis ikke de samme funktioner som det tidligere Protaverse, men vi arbejder på at gøre dem tilgængelige snarest muligt."
+   },
+   "config": {
+    "title": "Konfigurerer din :name konto",
+    "message": "Vi har brug for data fra dig før du kan påbegynde brugen af :name.",
+    "display_name": "Vist Navn",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Vi bruger dit Nintendo Network ID til at anskaffe dit Mii billede."
+   },
+   "finish": {
+    "title": "Mor dig i :name!",
+    "start": "Start"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name er et spilfælleskab der samler mennesker verden over ved brug af Mii karakterer.<br>Brug :name til at dele dine spiloplevelser og møde mennesker fra hele verden..",
+   "message": "Du skal bruge et Nintendo Network ID for at slå opslag op eller lave en profil. Vælg Link ID for at linke ny eller eksisterende ID.",
+   "link": "Link ID",
+   "exit": "Forlad"
+  }
+ }
+}

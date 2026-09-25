@@ -1,0 +1,201 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Vedeți comunitățile jocurilor pe care le jucați sau jocurile despre care sunteți curios!",
+    "title": "Comunități"
+   },
+   "favorites": "Comunități Favorite",
+   "search": {
+    "desc": "",
+    "name": "Căutați"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filtru",
+     "select": "Vă rugăm să faceți o alegere.",
+     "options": {
+      "all": "Toate Aplicațiile",
+      "games": ":Jocuri console",
+      "vc": "Virtual Console",
+      "other": "Altele"
+     }
+    },
+    "new": "Comunități Noi",
+    "special": "Speciale",
+    "platforms": {
+     "3ds": "Jocuri 3DS",
+     "wiiu": "Jocuri Wii U",
+     "wiiu-3ds": "Jocuri Wii U・Jocuri 3DS",
+     "switch": "Jocuri Switch",
+     "switch-wiiu": "Jocuri Switch・Jocuri Wii U",
+     "wii": "Jocuri Wii",
+     "ds": "Jocuri DS",
+     "wii-ds": "Jocuri Wii・Jocuri DS",
+     "special": "Comunitate Specială"
+    },
+    "empty": "Nu există nici o comunitate în această categorie.",
+    "more": "Arătați mai multe"
+   },
+   "footer": {
+    "console": ":Comunități console"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filtru",
+    "select": "Vă rugăm să faceți o alegere.",
+    "options": {
+     "all": "Toate Aplicațiile",
+     "games": ":Jocuri console",
+     "vc": "Virtual Console",
+     "other": "Altele"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "Jocuri 3DS",
+     "wiiu": "Jocuri Wii U",
+     "wiiu-3ds": "Jocuri Wii U・Jocuri 3DS",
+     "switch": "Jocuri Switch",
+     "switch-wiiu": "Jocuri Switch・Jocuri Wii U",
+     "wii": "Jocuri Wii",
+     "ds": "Jocuri DS",
+     "wii-ds": "Jocuri Wii・Jocuri Ds"
+    },
+    "empty": "Nu există comunități în această categorie."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "Toate",
+    "hot": "Populare"
+   },
+   "actions": {
+    "post": "Postați",
+    "memo": "Postări salvate",
+    "next": "Urm."
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Eroare",
+   "desc": "Ecranul nu a putut fi afișat."
+  },
+  "404": {
+   "title": "Eroare",
+   "desc": "Ecranul nu a putut fi afișat."
+  },
+  "banned": {
+   "title": "Cont Restricționat",
+   "desc": "Accesul dvs. la :name a fost restricționat. Vă rugăm să contactați moderatorii :name pe Discord pentru a discuta apelul dvs.",
+   "button": "Închideți"
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Înapoi",
+    "close": "Închideți",
+    "next": "Urm."
+   },
+   "intro": {
+    "title": "Bine ați venit la :name!",
+    "message": ":name vă lasă să trimiteți experiențele voastre din jocuri cu oameni din toată lumea."
+   },
+   "about": {
+    "title": "Despre :name",
+    "message1": ":name este o recreere a Protaverse făcut de fani pentru fani.",
+    "message2": "Nu are toate caracteristicile pe care le știați, dar tot poate fi folosit."
+   },
+   "config": {
+    "title": "Configurarea contului dvs. :name",
+    "message": "Ne trebuie câteva date despre dvs. pentru a putea începe să folosiți :name.",
+    "display_name": "Afisați nume",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Vom folosi NNID-ul dvs. pentru a obține imaginea Mii-ului."
+   },
+   "finish": {
+    "title": "Distrați-vă în :name!",
+    "start": "Începeți"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name este o comunitate de gaming care conectează oameni din toată lumea.<br>Folosiți :name pentru a împărtăși experiențele dvs. de gaming și pentru a întâlni oameni din toată lumea.",
+   "message": "Vă trebuie un Network ID pentru a folosi :name. Selectați Link ID pentru a conecta un ID nou sau existent.",
+   "link": "Link ID",
+   "exit": "Iesiți"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoilere"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "Această postare conține spoilere.",
+    "button": "Vedeți Postare"
+   }
+  },
+  "meta": {
+   "empathies": "Da-uri",
+   "comments": "Commentarii"
+  },
+  "extra": {
+   "more-comments": "Vedeți mai multe comentarii (:count)"
+  },
+  "feelings": {
+   "normal": "Da!",
+   "happy": "Da!",
+   "like": "Da♥",
+   "surprised": "Da!?",
+   "frustrated": "Da...",
+   "puzzled": "Da...",
+   "remove": "Ștergeți"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": "Profilul lui :name"
+   },
+   "meta": {
+    "violation": {
+     "select": "Vă rugăm să faceți o selecție.",
+     "create": "Raportați",
+     "blacklist": "Blocați"
+    },
+    "follow": "Urmăriți",
+    "unfollow": "Nu mai urmăriți",
+    "mymenu": "Meniu de Utilizator",
+    "settings": "Setări de Profil",
+    "back": "De la capăt"
+   },
+   "nav": {
+    "posts": "Postări",
+    "empathies": "Da-uri",
+    "following": "Urmăriți",
+    "followers": "Urmăritori"
+   },
+   "content": {
+    "favorite": "Comunități Favorite"
+   },
+   "error": {
+    "noposts": "Acest utilizator nu a postat încă."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Aici puteți schimba diferite setări, căuta alți utilizatori, și altele.",
+    "title": "User Menu"
+   },
+   "buttons": {
+    "settings": "Setări :service",
+    "blacklist": "Utilizatori blocați",
+    "announcements": "Anunțuri :service",
+    "help": "Manual/:service Codul de Conduită"
+   }
+  }
+ }
+}

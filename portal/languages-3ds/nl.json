@@ -1,0 +1,229 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Bekijk de communities voor games die je speelt of games waar je nieuwsgierig naar bent!",
+    "title": "Communities"
+   },
+   "favorites": "Favoriete Communities",
+   "search": {
+    "desc": "Zoek naar Communities",
+    "name": "Zoeken"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filter",
+     "select": "Maak A.U.B. een selectie.",
+     "options": {
+      "all": "Alle Software",
+      "games": ":console Games",
+      "vc": "Virtuele Console",
+      "other": "Anders"
+     }
+    },
+    "new": "Nieuwe Communities",
+    "special": "Speciaal",
+    "platforms": {
+     "3ds": "3DS Games",
+     "wiiu": "Wii U Games",
+     "wiiu-3ds": "Wii U Games・3DS Games",
+     "switch": "Switch Games",
+     "switch-wiiu": "Switch Games・Wii U Games",
+     "wii": "Wii Games",
+     "ds": "DS Games",
+     "wii-ds": "Wii Games・DS Games",
+     "special": "Speciale Community"
+    },
+    "empty": "Er zijn geen communities in deze categorie.",
+    "more": "Laat meer zien"
+   },
+   "footer": {
+    "console": ":console Communities"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filter",
+    "select": "Maak A.U.B. een selectie.",
+    "options": {
+     "all": "Alle Software",
+     "games": ":console Games",
+     "vc": "Virtuele Console",
+     "other": "Anders"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DS Games",
+     "wiiu": "Wii U Games",
+     "wiiu-3ds": "Wii U Games・3DS Games",
+     "switch": "Switch Games",
+     "switch-wiiu": "Switch Games・Wii U Games",
+     "wii": "Wii Games",
+     "ds": "DS Games",
+     "wii-ds": "Wii Games・DS Games"
+    },
+    "empty": "Er zijn geen communities in deze categorie."
+   }
+  },
+  "view": {
+   "actions": {
+    "next": "Volgende",
+    "post": "Plaatsen"
+   },
+   "kind": {
+    "hot": "Populair",
+    "new": "Alles"
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Error",
+   "desc": "Het scherm kon niet worden weergegeven."
+  },
+  "404": {
+   "title": "Error",
+   "desc": "Het scherm kon niet worden weergegeven."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Terug",
+    "close": "Sluit",
+    "next": "Volgende"
+   },
+   "intro": {
+    "title": "Welkom bij :name!",
+    "message": "Met :name kun je je in-game-ervaringen delen met mensen over de hele wereld."
+   },
+   "about": {
+    "title": "Over :name",
+    "message1": ":name is een recreatie van Protaverse voor de fans door de fans.",
+    "message2": "Aangezien dit een recreatie is, heeft deze mogelijk niet dezelfde functies als de neergehaalde Protaverse en we werken eraan deze zo snel mogelijk beschikbaar te stellen.."
+   },
+   "config": {
+    "title": "Configureer je :name Account",
+    "message": "We hebben wat gegevens van u nodig voordat u :name kunt gaan gebruiken.",
+    "display_name": "Weergavenaam",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "We gebruiken je Nintendo Network ID om je Mii-afbeelding op te halen."
+   },
+   "finish": {
+    "title": "Veel plezier met :name!",
+    "start": "Start"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name is een gamingcommunity die mensen van over de hele wereld verbindt met behulp van Mii-personages.<br>Gebruik :name om uw spelervaringen te delen en mensen van over de hele wereld te ontmoeten.",
+   "message": "Je hebt een Nintendo Network ID nodig om berichten te maken of een profiel aan te maken. Selecteer Link-ID om een nieuwe of bestaande ID te koppelen.",
+   "link": "Link ID",
+   "exit": "Exit"
+  }
+ },
+ "aqua": {
+  "language": "nl",
+  "portal": {
+   "community": {
+    "no_posts": "Er zijn nog geen berichten in deze community geplaatst. Waarom plaats je er niet een?",
+    "popular_communities": "Populaire community's",
+    "post": {
+     "post_body_placeholder": "Deel je gedachten met deze community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gaf een Yeah aan",
+     "your_post": "jouw bericht"
+    },
+    "header": "Meldingen",
+    "no_news": "Je hebt nog geen nieuwe meldingen.",
+    "tutorial": "Bij Meldingen kun je zien hoe anderen op je berichten of reacties hebben gereageerd en of er vriendschapsverzoeken openstaan. Bij nieuwe meldingen verschijnt een oranje pictogram."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Berichten van je vrienden en gebruikers die je volgt, worden hier weergegeven.",
+   "empty_description": "Voeg vrienden toe of volg gebruikers om deze pagina te vullen.",
+   "empty_title": "Nog geen activiteiten.",
+   "page_title": "Activiteiten"
+  },
+  "appeals": {
+   "notification_title": "Beslissing over je beroep"
+  },
+  "moderation": {
+   "removed_notification": "Bericht verwijderd door een moderator"
+  },
+  "notifications": {
+   "admin_warning": "Beheerderswaarschuwing",
+   "commented_post": "heeft op je bericht gereageerd.",
+   "followed_you": "volgt je nu.",
+   "replied_discussion": "heeft gereageerd op een discussie waaraan je deelnam."
+  },
+  "post": {
+   "comment_action": "Reageren",
+   "comment_cancel": "Annuleren",
+   "comment_placeholder": "Schrijf je reactie..."
+  }
+ },
+ "post": {
+  "feelings": {
+   "normal": "Yeah!",
+   "happy": "Yeah!",
+   "like": "Yeah♥",
+   "surprised": "Yeah?!",
+   "frustrated": "Yeah...",
+   "puzzled": "Yeah..!",
+   "remove": "Yeah intrekken"
+  },
+  "content": {
+   "spoiler": {
+    "button": "Bericht bekijken",
+    "desc": "Dit bericht bevat spoilers."
+   }
+  },
+  "meta": {
+   "comments": "Reacties",
+   "empathies": "Yeahs"
+  },
+  "status": {
+   "spoiler": "Spoilers"
+  }
+ },
+ "user": {
+  "profile": {
+   "content": {
+    "favorite": "Favoriete communities"
+   },
+   "error": {
+    "noposts": "Deze gebruiker heeft nog niets geplaatst."
+   },
+   "header": {
+    "name": "Profiel van :name"
+   },
+   "meta": {
+    "back": "Naar boven",
+    "follow": "Volgen",
+    "unfollow": "Ontvolgen"
+   },
+   "nav": {
+    "followers": "Volgers",
+    "following": "Volgend",
+    "posts": "Berichten"
+   }
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s personen gaven dit bericht een Yeah.",
+   "%s persoon gaf dit bericht een Yeah."
+  ],
+  "you_added": "Je hebt dit bericht een Yeah gegeven.",
+  "you_and_n_added": [
+   "Jij en %s andere personen gaven dit bericht een Yeah.",
+   "Jij en %s andere persoon gaven dit bericht een Yeah."
+  ]
+ }
+}

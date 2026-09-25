@@ -1,0 +1,30 @@
+<%# Nintendo community list (arrow list). Expects `communities`, optional `subtitle`. %>
+<%
+    const platformTag = { '3ds': '3ds', wiiu: 'wiiu', both: 'wiiu-3ds', vc: 'wiiu' };
+    const platformText = { '3ds': '3ds', wiiu: 'wiiu', both: 'wiiu-3ds' };
+%>
+<% if (!communities || !communities.length) { %>
+    <div class="no-content-window">
+        <div class="window">
+            <p><%= t('community.index.communities.empty', 'There are no communities in this category.') %></p>
+        </div>
+    </div>
+<% } else { %>
+    <ul class="list-content-with-icon-and-text arrow-list">
+        <% for (const community of communities) { %>
+            <li id="community-<%= community.id %>">
+                <span class="icon-container">
+                    <img src="/img/icons/<%= community.id %>.jpg" class="icon" width="48" height="48" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+                </span>
+                <a href="/titles/<%= community.id %>/<%= community.id %>" class="arrow-button scroll" data-pjax="1"></a>
+                <div class="body">
+                    <span class="community-name title"><%= community.name %></span>
+                    <% if (platformTag[community.platform]) { %>
+                        <span class="platform-tag platform-tag-<%= platformTag[community.platform] %>"></span>
+                    <% } %>
+                    <span class="text"><%= locals.subtitle || (platformText[community.platform] ? t('community.index.communities.platforms.' + platformText[community.platform], '') : '') %></span>
+                </div>
+            </li>
+        <% } %>
+    </ul>
+<% } %>

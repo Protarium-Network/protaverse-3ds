@@ -1,0 +1,23 @@
+<%# Communities banner + search/favorites buttons shared by the community listing pages. %>
+<div class="title-header text-header">
+    <div class="header-banner-container">
+        <div class="header-banner">
+            <p><%= t('community.index.header.desc', "Check out the communities for games that you play or games that you're curious about!") %></p>
+        </div>
+    </div>
+    <h1 class="info-content">
+        <span class="icon-container"></span>
+        <span class="title-container">
+            <span class="title"><%= locals.title || t('community.index.header.title', 'Communities') %></span>
+        </span>
+    </h1>
+</div>
+<div class="community-top-top-container">
+    <span class="top-left-button title-search-button">
+        <span class="symbol"><%= t('community.index.search.name', 'Search') %></span>
+        <input data-action="/titles/search" name="query" class="title-search-title-id" minlength="2" maxlength="20" type="text" monospace="on" guide="<%= t('community.index.search.desc', 'Search Communities') %>" cave_oninput="$(document.activeElement).trigger('input')" value="">
+    </span>
+    <a href="/communities/favorites" class="favorites-button top-right-button" data-pjax="1">
+        <span class="symbol"><%= t('community.index.favorites', 'Favorite Communities') %></span>
+    </a>
+</div>

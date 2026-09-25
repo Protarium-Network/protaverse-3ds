@@ -1,0 +1,39 @@
+<%# /users/:nnid/(posts|following|followers|friends) %>
+<% const isMe = account && account[0] && Number(account[0].id) === Number(view_account.id); %>
+<%- include('../../partials/layout_start', { bodyClass: 'user-page' }) %>
+    <%- include('../../partials/user_header', { u: view_account, isMe: isMe, section: section }) %>
+    <div class="body-content">
+        <% if (section === 'posts') { %>
+            <div class="post-list list">
+                <% if (!items.length) { %>
+                    <div class="no-content-window"><div class="window"><p><%= t('user.profile.error.noposts', 'This user has not posted yet.') %></p></div></div>
+                <% } %>
+                <%- include('../../partials/posts', { posts: items, showCommunity: true }) %>
+            </div>
+        <% } else { %>
+            <div class="follow-button-list">
+                <% if (!items.length) { %>
+                    <div class="no-content-window"><div class="window"><p>—</p></div></div>
+                <% } else { %>
+                    <ul class="list-content-with-icon-and-text arrow-list">
+                        <% for (const person of items) { %>
+                            <li class="scroll">
+                                <span class="user-icon-container<%= person.verified || person.admin ? ' official-user' : '' %>">
+                                    <a href="/users/<%= encodeURIComponent(person.nnid) %>" class="scroll-focus" data-pjax="1"><img src="/mii/<%= person.pid || person.nnid || 'default' %>/normal.png" class="user-icon" onerror="this.onerror=null; this.src='/img/mii_null.png'"></a>
+                                </span>
+                                <a href="/users/<%= encodeURIComponent(person.nnid) %>" class="arrow-button scroll" data-pjax="1"></a>
+                                <div class="body">
+                                    <p class="title">
+                                        <span class="nick-name"><%= person.mii_name || person.nnid %></span>
+                                        <span class="id-name"><%= person.nnid %></span>
+                                    </p>
+                                    <% if (person.bio) { %><p class="text"><%= person.bio %></p><% } %>
+                                </div>
+                            </li>
+                        <% } %>
+                    </ul>
+                <% } %>
+            </div>
+        <% } %>
+    </div>
+<%- include('../../partials/layout_end') %>

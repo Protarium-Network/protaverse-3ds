@@ -1,0 +1,154 @@
+{
+ "aqua": {
+  "language": "el",
+  "portal": {
+   "community": {
+    "no_posts": "No posts have been made for this community, why don't you try making one?",
+    "popular_communities": "Δημοφιλείς κοινότητες",
+    "post": {
+     "post_body_placeholder": "Share your thoughts to this community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gave a Yeah to",
+     "your_post": "your post"
+    },
+    "header": "Ειδοποιήσεις",
+    "no_news": "You have no new notifications yet.",
+    "tutorial": "In Notifications, you can find out how other people have reacted to your posts or comments, and see if you have any pending friend requests. If you have new notifications, an orange icon will appear to let you know."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Posts from your friends and users you follow appear here.",
+   "empty_description": "Add friends or follow users to fill this page.",
+   "empty_title": "Δεν υπάρχει δραστηριότητα ακόμη.",
+   "page_title": "Ροή δραστηριότητας"
+  },
+  "appeals": {
+   "notification_title": "Απόφαση για την έφεσή σου"
+  },
+  "moderation": {
+   "removed_notification": "Post deleted by a moderator"
+  },
+  "notifications": {
+   "admin_warning": "Administrator Warning",
+   "commented_post": "commented on your post.",
+   "followed_you": "followed you.",
+   "replied_discussion": "replied to a discussion you participated in."
+  },
+  "post": {
+   "comment_action": "Σχολιασμός",
+   "comment_cancel": "Ακύρωση",
+   "comment_placeholder": "Γράψτε το σχόλιό σας…"
+  }
+ },
+ "community": {
+  "index": {
+   "communities": {
+    "empty": "Δεν υπάρχουν κοινότητες σε αυτή την κατηγορία.",
+    "filter": {
+     "name": "Φίλτρο",
+     "options": {
+      "all": "Όλο το λογισμικό",
+      "other": "Άλλα",
+      "vc": "Virtual Console"
+     },
+     "select": "Κάντε μια επιλογή."
+    },
+    "more": "Εμφάνιση περισσότερων",
+    "new": "Νέες κοινότητες",
+    "platforms": {
+     "3ds": "Παιχνίδια 3DS",
+     "wiiu": "Παιχνίδια Wii U",
+     "wiiu-3ds": "Παιχνίδια Wii U・Παιχνίδια 3DS"
+    },
+    "special": "Ειδικές"
+   },
+   "favorites": "Αγαπημένες κοινότητες",
+   "header": {
+    "desc": "Δείτε τις κοινότητες των παιχνιδιών που παίζετε ή που σας κινούν την περιέργεια!",
+    "title": "Κοινότητες"
+   },
+   "search": {
+    "desc": "Αναζήτηση κοινοτήτων",
+    "name": "Αναζήτηση"
+   }
+  },
+  "view": {
+   "actions": {
+    "next": "Επόμενο",
+    "post": "Δημοσίευση"
+   },
+   "kind": {
+    "hot": "Δημοφιλή",
+    "new": "Όλα"
+   }
+  }
+ },
+ "errors": {
+  "404": {
+   "desc": "Δεν ήταν δυνατή η εμφάνιση της οθόνης."
+  }
+ },
+ "post": {
+  "content": {
+   "spoiler": {
+    "button": "Προβολή δημοσίευσης",
+    "desc": "Αυτή η δημοσίευση περιέχει spoiler."
+   }
+  },
+  "feelings": {
+   "normal": "Yeah!",
+   "happy": "Yeah!",
+   "like": "Yeah♥",
+   "surprised": "Yeah!?",
+   "frustrated": "Yeah...",
+   "puzzled": "Yeah...",
+   "remove": "Αναίρεση Yeah"
+  },
+  "meta": {
+   "comments": "Σχόλια",
+   "empathies": "Yeah"
+  },
+  "status": {
+   "spoiler": "Spoiler"
+  }
+ },
+ "user": {
+  "profile": {
+   "content": {
+    "favorite": "Αγαπημένες κοινότητες"
+   },
+   "error": {
+    "noposts": "Αυτός ο χρήστης δεν έχει δημοσιεύσει ακόμα."
+   },
+   "header": {
+    "name": "Προφίλ του :name"
+   },
+   "meta": {
+    "back": "Στην αρχή",
+    "follow": "Ακολούθηση",
+    "unfollow": "Διακοπή ακολούθησης"
+   },
+   "nav": {
+    "followers": "Ακόλουθοι",
+    "following": "Ακολουθεί",
+    "posts": "Δημοσιεύσεις"
+   }
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s άτομα έδωσαν Yeah σε αυτή τη δημοσίευση.",
+   "%s άτομο έδωσε Yeah σε αυτή τη δημοσίευση."
+  ],
+  "you_added": "Δώσατε Yeah σε αυτή τη δημοσίευση.",
+  "you_and_n_added": [
+   "Εσείς και %s άλλα άτομα δώσατε Yeah σε αυτή τη δημοσίευση.",
+   "Εσείς και %s άλλο άτομο δώσατε Yeah σε αυτή τη δημοσίευση."
+  ]
+ }
+}

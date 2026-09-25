@@ -1,0 +1,11 @@
+Protaverse 3DS runs inside an Aquamarine Portal (AquamarineMiiverseTeam) and builds on:
+
+  - rverse2 (rverseTeam), Apache License 2.0:
+      the 3DS page markup in portal/views/ctr is adapted from its 3DS templates, and
+      portal/languages-3ds is converted from its translations (resources/lang).
+  - Aquamarine-3DS (AquamarineMiiverseTeam): first 3DS port this project started from.
+
+No proprietary Nintendo code or assets are included in this repository. The 3DS Miiverse
+stylesheet, script bundle and images are generated locally by tools/build_n3ds.py from an
+rverse2 checkout and are not redistributed here. Miiverse and Nintendo 3DS are trademarks of
+Nintendo; this project is not affiliated with Nintendo.

@@ -1,0 +1,114 @@
+<%
+    const feelings = ['normal', 'happy', 'like', 'surprised', 'frustrated', 'puzzled'];
+    const feeling = feelings[Number(post.feeling_id)] || 'normal';
+    const viewerId = account && account[0] ? Number(account[0].id) : null;
+    const liked = post.empathies.some(e => Number(e.account_id) === viewerId);
+    const others = post.empathies.filter(e => Number(e.account_id) !== viewerId);
+    const isOwn = Number(post.account_id) === viewerId;
+    const official = post.verified || post.admin;
+    const spoiler = Number(post.spoiler) === 1;
+    const painting = post.painting_cdn_url || (post.painting && String(post.painting).startsWith('/') ? post.painting : null);
+    // 3DS-sized copy of local screenshots (routes/ctr.js), the originals are too heavy for the applet
+    const screenshot = (post.screenshot_cdn_url || (post.screenshot && String(post.screenshot).startsWith('/') ? post.screenshot : '') || '')
+        .replace(/^\/img\/screenshots\//, '/img-ctr/screenshots/') || null;
+    const time = (d) => moment(d).locale(t('aqua.language', 'en')).fromNow();
+    const mii = (who, expression) => '/mii/' + (who.pid || who.nnid || 'default') + '/' + expression + '.png';
+%>
+<%- include('../partials/layout_start', { bodyClass: 'post-permalink' }) %>
+    <div id="header" class="with-ctr-banner">
+        <img class="ctr-header-banner" src="/img/banners-ctr/<%= post.community_id %>.jpg" width="400" height="168" onerror="this.onerror=null; this.parentNode.className=''; this.parentNode.removeChild(this);">
+        <div id="header-body">
+            <h1 id="page-title"><span><%= post.community_name || post.mii_name || post.nnid %></span></h1>
+        </div>
+    </div>
+    <div id="post-permalink-content">
+        <div id="header-meta">
+            <p class="community-container">
+                <a href="/titles/<%= post.community_id %>/<%= post.community_id %>" class="community" data-pjax="1">
+                    <span class="community-container-inner">
+                        <img src="/img/icons/<%= post.community_id %>.jpg" class="community-icon" width="14" height="14" onerror="this.onerror=null; this.src='/img/mii_null.png'"><%= post.community_name %>
+                    </span>
+                </a>
+            </p>
+        </div>
+        <div id="post-permalink-body" class="post scroll post-subtype-default<%= official ? ' official-user' : '' %><%= screenshot ? ' with-image' : '' %>">
+            <a href="/users/<%= encodeURIComponent(post.nnid || '') %>" data-pjax="1" class="user-icon-container scroll-focus<%= official ? ' official-user' : '' %>">
+                <img src="<%= mii(post, feeling) %>" class="user-icon" width="32" height="32" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+            </a>
+            <header>
+                <div class="header-inner">
+                    <p class="user-name"><a href="/users/<%= encodeURIComponent(post.nnid || '') %>" data-pjax="1"><%= post.mii_name || post.nnid %></a></p>
+                    <p class="timestamp-container">
+                        <a class="timestamp"><%= time(post.create_time) %></a>
+                        <% if (spoiler) { %> · <span class="spoiler"><%= t('post.status.spoiler', 'Spoilers') %></span><% } %>
+                    </p>
+                </div>
+            </header>
+            <div class="post-content<%= !post.body && painting ? '-memo' : '' %>">
+                <% if (post.topic_tag) { %><p class="post-tag"><%= post.topic_tag %></p><% } %>
+                <% if (post.body) { %><p class="post-content-text"><%= post.body %></p><% } %>
+                <% if (screenshot) { %>
+                    <a href="<%= screenshot %>" data-large-capture-url="<%= screenshot %>" role="button" class="screenshot-container js-open-image-viewer"><img src="<%= screenshot %>" class="title-capture" height="96"></a>
+                <% } %>
+                <% if (!post.body && painting) { %><p class="post-content-memo"><img src="<%= painting %>"></p><% } %>
+            </div>
+            <div class="post-meta">
+                <div class="expression">
+                    <button type="button"<%= isOwn ? ' disabled' : '' %> class="symbol submit empathy-button<%= isOwn ? ' disabled' : '' %><%= liked ? ' empathy-added' : '' %>" data-feeling="<%= feeling %>" data-action="/posts/<%= post.id %>/empathies" data-other-empathy-count="<%= others.length %>"><span class="empathy-button-text"><%= liked ? t('post.feelings.remove', 'Unyeah') : t('post.feelings.' + feeling, 'Yeah!') %></span></button>
+                </div>
+            </div>
+        </div>
+        <div id="empathy-content" class="post-permalink-feeling"<% if (!post.empathies.length) { %> style="display: none"<% } %>>
+            <p class="post-permalink-feeling-text"><%= post.empathies.length %> <%= t('post.meta.empathies', 'Yeahs') %></p>
+            <div class="post-permalink-feeling-icon-container">
+                <a href="<%= profile_url %>" data-pjax="1" class="post-permalink-feeling-icon visitor"<% if (!liked) { %> style="display: none"<% } %>>
+                    <img src="<%= mii(account[0], feeling) %>" class="user-icon" width="32" height="32" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+                </a>
+                <% for (const liker of others.slice(0, 14)) { %>
+                    <a href="/users/<%= encodeURIComponent(liker.nnid || '') %>" data-pjax="1" class="post-permalink-feeling-icon<%= liker.verified || liker.admin ? ' official-user' : '' %>">
+                        <img src="<%= mii(liker, feeling) %>" class="user-icon" width="32" height="32" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+                    </a>
+                <% } %>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <div id="post-permalink-comments">
+            <ul class="post-permalink-reply list reply-list" data-parent-post-id="<%= post.id %>">
+                <% for (const reply of post.replies) { %>
+                    <%
+                        const replyFeeling = feelings[Number(reply.feeling_id)] || 'normal';
+                        const ownReply = Number(reply.account_id) === viewerId;
+                        const replyOfficial = reply.verified || reply.admin;
+                    %>
+                    <li id="reply-<%= reply.id %>" class="test-reply scroll <%= Number(reply.account_id) === Number(post.account_id) ? 'my' : 'other' %><%= replyOfficial ? ' official-user' : '' %>">
+                        <a href="/users/<%= encodeURIComponent(reply.nnid || '') %>" data-pjax="1" class="user-icon-container scroll-focus<%= replyOfficial ? ' official-user' : '' %>">
+                            <img src="<%= mii(reply, replyFeeling) %>" class="user-icon" width="32" height="32" onerror="this.onerror=null; this.src='/img/mii_null.png'">
+                        </a>
+                        <div class="reply-body">
+                            <header>
+                                <div class="header-inner">
+                                    <p class="user-name"><a href="/users/<%= encodeURIComponent(reply.nnid || '') %>" data-pjax="1"><%= reply.mii_name || reply.nnid %></a></p>
+                                    <p class="timestamp-container"><%= time(reply.create_time) %></p>
+                                </div>
+                            </header>
+                            <p class="reply-content-text"><%= reply.body %></p>
+                            <div class="reply-meta">
+                                <button type="button"<%= ownReply ? ' disabled' : '' %> class="symbol submit empathy-button reply<%= ownReply ? ' disabled' : '' %><%= reply.viewer_empathied ? ' empathy-added' : '' %>" data-feeling="<%= replyFeeling %>" data-action="/replies/<%= reply.id %>/empathies">
+                                    <span class="empathy-button-text"><%= reply.viewer_empathied ? t('post.feelings.remove', 'Unyeah') : t('post.feelings.' + replyFeeling, 'Yeah!') %></span>
+                                </button>
+                                <span class="empathy symbol">
+                                    <span class="symbol-label"><%= t('post.meta.empathies', 'Yeahs') %></span>
+                                    <span class="empathy-count"><%= (reply.empathies || []).length %></span>
+                                </span>
+                            </div>
+                        </div>
+                    </li>
+                <% } %>
+            </ul>
+        </div>
+        <div>
+            <a href="/posts/<%= post.id %>/reply" class="post-button reply-button test-reply-button" data-pjax="1"><span class="symbol"><%= t('protarium.post.comment_action', 'Comment') %></span></a>
+        </div>
+    </div>
+<%- include('../partials/layout_end') %>

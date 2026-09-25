@@ -1,0 +1,250 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "¡Echa un vistazo a las comunidades para ver los juegos a los que juegas o los juegos que te interesan!",
+    "title": "Comunidades"
+   },
+   "favorites": "Comunidades favoritas",
+   "search": {
+    "desc": "Buscar comunidades",
+    "name": "Buscar"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filtro",
+     "select": "Por favor, haga una selección.",
+     "options": {
+      "all": "Todo el software",
+      "games": "Juegos de :console",
+      "vc": "Consola Virtual",
+      "other": "Otros"
+     }
+    },
+    "new": "Nuevas comunidades",
+    "special": "Especial",
+    "platforms": {
+     "3ds": "Juegos 3DS",
+     "wiiu": "Juegos Wii U",
+     "wiiu-3ds": "Juegos Wii U ・Juegos 3DS",
+     "switch": "Juegos Switch",
+     "switch-wiiu": "Juegos Switch・Juegos Wii U",
+     "wii": "Juegos Wii",
+     "ds": "Juegos DS",
+     "wii-ds": "Juegos Wii・Juegos DS",
+     "special": "Comunidad Especial"
+    },
+    "empty": "No hay comunidades en esta categoría.",
+    "more": "Mostrar más"
+   },
+   "footer": {
+    "console": "Comunidades de :console"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filtro",
+    "select": "Por favor, haga una selección.",
+    "options": {
+     "all": "Todo el software",
+     "games": "Juegos de :console",
+     "vc": "Consola Virtual",
+     "other": "Otros"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "Juegos 3DS",
+     "wiiu": "Juegos Wii U",
+     "wiiu-3ds": "Juegos Wii U ・Juegos 3DS",
+     "switch": "Juegos Switch",
+     "switch-wiiu": "Juegos Switch・Juegos Wii U",
+     "wii": "Juegos Wii",
+     "ds": "Juegos DS",
+     "wii-ds": "Juegos Wii・Juegos DS"
+    },
+    "empty": "No hay comunidades en esta categoría."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "Todo",
+    "hot": "Popular"
+   },
+   "actions": {
+    "post": "Publicación",
+    "memo": "Publicaciones guardadas",
+    "next": "Siguiente"
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Error",
+   "desc": "La pantalla no se pudo mostrar."
+  },
+  "404": {
+   "title": "Error",
+   "desc": "La pantalla no se pudo mostrar."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Atras",
+    "close": "Cerrar",
+    "next": "Siguiente"
+   },
+   "intro": {
+    "title": "¡Bienvenido a :name!",
+    "message": ":name te permite compartir tus experiencias en los juego con personas de todo el mundo."
+   },
+   "about": {
+    "title": "Sobre :name",
+    "message1": ":name es una recreación de Protaverse hecha por fanáticos para fanáticos.",
+    "message2": "Como se trata de una recreación, es posible que no tenga las mismas características que el difunto Protaverse, estamos trabajando para que estén disponibles lo antes posible."
+   },
+   "config": {
+    "title": "Configurando tu cuenta de :name",
+    "message": "Necesitamos algunos datos sobre usted antes de que pueda comenzar a utilizar :name.",
+    "display_name": "Nombre a mostrar",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Usamos su ID de Nintendo Network para obtener la imagen de su Mii."
+   },
+   "finish": {
+    "title": "¡Diviértete en :name!",
+    "start": "Empezar"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name es una comunidad de juegos que conecta a personas de todo el mundo usando personajes Mii. <br> Uso: El nombre se usa para compartir sus experiencias de juego y conocer personas de todo el mundo.",
+   "message": "Necesitarás una ID de Nintendo Network para crear publicaciones o crear un perfil. Seleccione ID de enlace para vincular una ID nueva o existente.",
+   "link": "Enlace ID",
+   "exit": "Salir"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoilers"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "Este post contiene spoilers.",
+    "button": "Ver Post"
+   }
+  },
+  "meta": {
+   "empathies": "Buenas",
+   "comments": "Comentarios"
+  },
+  "feelings": {
+   "normal": "Buena!",
+   "happy": "Buena!",
+   "like": "Buena♥",
+   "surprised": "Buena?!",
+   "frustrated": "Buena...",
+   "puzzled": "Buena..!",
+   "remove": "Mejor no"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": ":name\\ Perfil"
+   },
+   "meta": {
+    "violation": {
+     "select": "Por favor haz una selección.",
+     "create": "Reportar",
+     "blacklist": "Bloquear"
+    },
+    "follow": "Seguir",
+    "unfollow": "Dejar de seguir",
+    "mymenu": "Menu de usuario",
+    "settings": "Configuración del perfil",
+    "back": "Ir arriba"
+   },
+   "nav": {
+    "posts": "Publicaciones",
+    "empathies": "Mola",
+    "following": "Siguiendo",
+    "followers": "Seguidores"
+   },
+   "content": {
+    "favorite": "Comunidades Favoritas"
+   },
+   "error": {
+    "noposts": "Este usuario aún no ha publicado."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Aquí puede cambiar varias configuraciones, buscar otros usuarios y más.",
+    "title": "Menú de usuario"
+   },
+   "buttons": {
+    "settings": ":service Configuraciones",
+    "blacklist": "Usuarios Bloqueados",
+    "announcements": ":service Anuncios",
+    "help": "Manual/:service Código de Conducta"
+   }
+  }
+ },
+ "aqua": {
+  "language": "es",
+  "portal": {
+   "community": {
+    "no_posts": "Todavía no hay publicaciones en esta comunidad, por que no eres el primero?",
+    "popular_communities": "Comunidades Populares",
+    "post": {
+     "post_body_placeholder": "Comparte tus pensamientos con una publicación a esta comunidad."
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "le dio una Buena a",
+     "your_post": "tu publicación"
+    },
+    "header": "Notificaciones",
+    "no_news": "Todavia no tienes notificaciones.",
+    "tutorial": "En Notificaciones, puedes encontrar cómo otras personas han reaccionado a tus publicaciones o comentarios, y ver si tienes algunas solicitudes de amistad pendientes. Si tienes notificaciones, un icono naranja aparacera para hacerte saber."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Las publicaciones de tus amigos y de los usuarios a los que sigues aparecen aquí.",
+   "empty_description": "Añade amigos o sigue a otros usuarios para llenar esta página.",
+   "empty_title": "Todavía no hay actividad.",
+   "page_title": "Actividad"
+  },
+  "appeals": {
+   "notification_title": "Decisión sobre tu apelación"
+  },
+  "moderation": {
+   "removed_notification": "Publicación eliminada por un moderador"
+  },
+  "notifications": {
+   "admin_warning": "Advertencia del administrador",
+   "commented_post": "ha comentado tu publicación.",
+   "followed_you": "te ha seguido.",
+   "replied_discussion": "respondió a una conversación en la que participaste."
+  },
+  "post": {
+   "comment_action": "Comentar",
+   "comment_cancel": "Cancelar",
+   "comment_placeholder": "Escribe tu comentario..."
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s personas le dieron una Buena a esta publicación",
+   "%s persona le dio una Buena a esta publicación."
+  ],
+  "you_added": "Tú le diste una Buena a esta publicación.",
+  "you_and_n_added": [
+   "Tú y %s otras personas le dieron una Buena a esta publicación.",
+   "Tú y %s persona más le dieron una Buena a esta publicación."
+  ]
+ }
+}

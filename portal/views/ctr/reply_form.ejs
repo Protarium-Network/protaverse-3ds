@@ -1,0 +1,15 @@
+<%# Comments go to the Portal's POST /posts/:id/comments (text only, like on the Wii U). %>
+<%- include('partials/layout_start', { bodyClass: 'add-post-page' }) %>
+    <%- include('partials/form_header', { kind: t('protarium.post.comment_action', 'Comment') }) %>
+    <div class="body-content">
+        <div id="form-content">
+            <%- include('partials/entry_form', {
+                action: '/posts/' + post.id + '/comments',
+                hidden: {},
+                allowPainting: false,
+                maxLength: 500,
+                placeholder: t('protarium.post.comment_placeholder', 'Add a comment here.')
+            }) %>
+        </div>
+    </div>
+<%- include('partials/layout_end') %>

@@ -1,0 +1,16 @@
+<%- include('../partials/layout_start', { bodyClass: 'activity' }) %>
+    <%- include('../partials/text_header', {
+        title: t('protarium.activity.page_title', 'Activity Feed'),
+        description: t('protarium.activity.description', 'Here you can view posts and more from the users you follow.')
+    }) %>
+    <div class="body-content post-list" id="activity-feed">
+        <% if (!posts.length) { %>
+            <div class="no-content-window">
+                <div class="window">
+                    <p><%= t('protarium.activity.empty_title', 'No activity yet.') %><br><%= t('protarium.activity.empty_description', 'Follow people to fill this page.') %></p>
+                </div>
+            </div>
+        <% } %>
+        <%- include('../partials/posts', { posts: posts, showCommunity: true }) %>
+    </div>
+<%- include('../partials/layout_end') %>

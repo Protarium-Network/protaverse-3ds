@@ -1,0 +1,282 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Check out the communities for games that you play or games that you're curious about!",
+    "title": "Communities"
+   },
+   "favorites": "Favorite Communities",
+   "search": {
+    "desc": "Search Communities",
+    "name": "Search"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filter",
+     "select": "Please make a selection.",
+     "options": {
+      "all": "All Software",
+      "games": ":console Games",
+      "vc": "Virtual Console",
+      "other": "Others"
+     }
+    },
+    "new": "New Communities",
+    "special": "Special",
+    "platforms": {
+     "3ds": "3DS Games",
+     "wiiu": "Wii U Games",
+     "wiiu-3ds": "Wii U Games・3DS Games",
+     "switch": "Switch Games",
+     "switch-wiiu": "Switch Games・Wii U Games",
+     "wii": "Wii Games",
+     "ds": "DS Games",
+     "wii-ds": "Wii Games・DS Games",
+     "special": "Special Community"
+    },
+    "empty": "There are no communities in this category.",
+    "more": "Show More"
+   },
+   "footer": {
+    "console": ":console Communities"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filter",
+    "select": "Please make a selection.",
+    "options": {
+     "all": "All Software",
+     "games": ":console Games",
+     "vc": "Virtual Console",
+     "other": "Others"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DS Games",
+     "wiiu": "Wii U Games",
+     "wiiu-3ds": "Wii U Games・3DS Games",
+     "switch": "Switch Games",
+     "switch-wiiu": "Switch Games・Wii U Games",
+     "wii": "Wii Games",
+     "ds": "DS Games",
+     "wii-ds": "Wii Games・DS Games"
+    },
+    "empty": "There are no communities in this category."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "All",
+    "hot": "Popular"
+   },
+   "actions": {
+    "post": "Post",
+    "memo": "Saved Posts",
+    "next": "Next"
+   }
+  },
+  "favorites": {
+   "favorites_label": "Favorites",
+   "software_used": "Software Used"
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Error",
+   "desc": "The screen could not be displayed."
+  },
+  "404": {
+   "title": "Error",
+   "desc": "The screen could not be displayed."
+  },
+  "banned": {
+   "title": "Account Restricted",
+   "desc": "Your access to :name has been restricted. Please contact the :name Moderators on Discord to discuss your appeal.",
+   "button": "Close"
+  },
+  "pretendo": {
+   "title": "Authentication Error",
+   "desc": ":name can't authenticate your console as you may be using Pretendo Network to access :name. Please switch back to Nintendo Network and try again.",
+   "button": "Close"
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Back",
+    "close": "Close",
+    "next": "Next"
+   },
+   "intro": {
+    "title": "Welcome to :name!",
+    "message": ":name lets you share your in-game experiences with people from all over the world."
+   },
+   "about": {
+    "title": "About :name",
+    "message1": ":name is a recreation of Protaverse made by fans for fans.",
+    "message2": "It may not have all the features you know and love, but it can still be used nonetheless."
+   },
+   "config": {
+    "title": "Configuring your :name Account",
+    "message": "We need some data from you before you can start using :name.",
+    "display_name": "Display Name",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "We use your NNID to fetch your Mii image."
+   },
+   "finish": {
+    "title": "Have fun in :name!",
+    "start": "Start"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name is a cgaming community that connects people from all over the world.<br>Use :name to share your gaming experiences and meet people from around the world.",
+   "message": "You need a Network ID in order to use :name. Select Link ID to link a new or existing ID.",
+   "link": "Link ID",
+   "exit": "Exit"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoilers"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "This post contains spoilers.",
+    "button": "View Post"
+   }
+  },
+  "meta": {
+   "empathies": "Yeahs",
+   "comments": "Comments"
+  },
+  "extra": {
+   "more-comments": "View More Comments (:count)"
+  },
+  "feelings": {
+   "normal": "Yeah!",
+   "happy": "Yeah!",
+   "like": "Yeah♥",
+   "surprised": "Yeah!?",
+   "frustrated": "Yeah...",
+   "puzzled": "Yeah...",
+   "remove": "Unyeah"
+  }
+ },
+ "settings": {
+  "account": {
+   "title": ":name Settings",
+   "display_language": {
+    "title": "In what language you want :name to be displayed in?",
+    "note": "Note: This setting does not affect what language posts are displayed in."
+   },
+   "post_language": {
+    "title": "In what language do you want to see posts in :name?",
+    "note": "Note: This setting does not affect what language :name is displayed in.",
+    "all_languages": "All Languages"
+   },
+   "submit": "Save Settings"
+  },
+  "profile": {
+   "title": "Profile Settings",
+   "comment": {
+    "section_name": "Profile Comment",
+    "placeholder": "Write about yourself here.",
+    "note": "Attention",
+    "note_content": "Please refrain from including any of the following information:<br>\n- Your address, telephone number, e-mail address, the name of your school, or any other information that could personally identify you. <br>\n- Links to external websites which could be used to contact you directly.<br>\n- Any other content prohibited by the :name Code of Conduct.<br>\nPosting such information is against the :name Code of Conduct and may result in your profile being hidden from the public."
+   },
+   "submit": "Save Settings"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": ":name's Profile"
+   },
+   "meta": {
+    "violation": {
+     "select": "Please make a selection.",
+     "create": "Report",
+     "blacklist": "Block"
+    },
+    "follow": "Follow",
+    "unfollow": "Unfollow",
+    "mymenu": "User Menu",
+    "settings": "Profile Settings",
+    "back": "To Top"
+   },
+   "nav": {
+    "posts": "Posts",
+    "empathies": "Yeahs",
+    "following": "Following",
+    "followers": "Followers"
+   },
+   "content": {
+    "favorite": "Favorite Communities"
+   },
+   "error": {
+    "noposts": "This user has not posted yet.",
+    "nofavorites": "This user has no favorite communities yet."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Here you can change various settings, search for other users, and more.",
+    "title": "User Menu"
+   },
+   "buttons": {
+    "settings": ":service Settings",
+    "blacklist": "Blocked Users",
+    "announcements": ":service Announcements",
+    "help": "Manual/:service Code of Conduct"
+   }
+  }
+ },
+ "aqua": {
+  "language": "en",
+  "portal": {
+   "community": {
+    "no_posts": "No posts have been made for this community, why don't you try making one?",
+    "popular_communities": "Popular Communities",
+    "post": {
+     "post_body_placeholder": "Share your thoughts to this community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gave a Yeah to",
+     "your_post": "your post"
+    },
+    "header": "Notifications",
+    "no_news": "You have no new notifications yet.",
+    "tutorial": "In Notifications, you can find out how other people have reacted to your posts or comments, and see if you have any pending friend requests. If you have new notifications, an orange icon will appear to let you know."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Posts from your friends and users you follow appear here.",
+   "empty_description": "Add friends or follow users to fill this page.",
+   "empty_title": "No activity yet.",
+   "page_title": "Activity Feed"
+  },
+  "appeals": {
+   "notification_title": "Decision on your appeal"
+  },
+  "moderation": {
+   "removed_notification": "Post deleted by a moderator"
+  },
+  "notifications": {
+   "admin_warning": "Administrator Warning",
+   "commented_post": "commented on your post.",
+   "followed_you": "followed you.",
+   "replied_discussion": "replied to a discussion you participated in."
+  },
+  "post": {
+   "comment_action": "Comment",
+   "comment_cancel": "Cancel",
+   "comment_placeholder": "Write your comment..."
+  }
+ }
+}

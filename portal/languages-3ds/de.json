@@ -1,0 +1,251 @@
+{
+ "community": {
+  "index": {
+   "header": {
+    "desc": "Besuche die Communities für Spiele, die du spielst, oder für Spiele, auf die du neugierig bist!",
+    "title": "Communities"
+   },
+   "favorites": "Lieblings-Communities",
+   "search": {
+    "desc": "Suche Communities",
+    "name": "Suchen"
+   },
+   "communities": {
+    "filter": {
+     "name": "Filter",
+     "select": "Bitte triff eine Auswahl.",
+     "options": {
+      "all": "Alle Software",
+      "games": ":console-spiele",
+      "vc": "Virtual Console",
+      "other": "Andere"
+     }
+    },
+    "new": "Neue Communities",
+    "special": "Besondere",
+    "platforms": {
+     "3ds": "3DS-Spiele",
+     "wiiu": "Wii U-Spiele",
+     "wiiu-3ds": "Wii U-Spiele・3DS-Spiele",
+     "switch": "Switch-Spiele",
+     "switch-wiiu": "Switch-Spiele・Wii U-Spiele",
+     "wii": "Wii-Spiele",
+     "ds": "DS-Spiele",
+     "wii-ds": "Wii-Spiele・DS-Spiele",
+     "special": "Besondere Communities"
+    },
+    "empty": "In dieser Kategorie gibt es keine Communities.",
+    "more": "Mehr anzeigen"
+   },
+   "footer": {
+    "console": ":console-Communities"
+   }
+  },
+  "listing": {
+   "filter": {
+    "name": "Filter",
+    "select": "Bitte triff eine Auswahl.",
+    "options": {
+     "all": "Alle Software",
+     "games": ":console-Spiele",
+     "vc": "Virtual Console",
+     "other": "Andere"
+    }
+   },
+   "communities": {
+    "platforms": {
+     "3ds": "3DS-Spiele",
+     "wiiu": "Wii U-Spiele",
+     "wiiu-3ds": "Wii U-Spiele・3DS-Spiele",
+     "switch": "Switch-Spiele",
+     "switch-wiiu": "Switch-Spiele・Wii U-Spiele",
+     "wii": "Wii-Spiele",
+     "ds": "DS-Spiele",
+     "wii-ds": "Wii-Spiele・DS-Spiele",
+     "special": "Besondere Communities"
+    },
+    "empty": "In dieser Kategorie gibt es keine Communities."
+   }
+  },
+  "view": {
+   "kind": {
+    "new": "Alle",
+    "hot": "Beliebt"
+   },
+   "actions": {
+    "post": "Posten",
+    "memo": "Gespeicherte Beiträge",
+    "next": "Weiter"
+   }
+  }
+ },
+ "errors": {
+  "403": {
+   "title": "Fehler",
+   "desc": "Dieser Bildschirm konnte nicht angezeigt werden."
+  },
+  "404": {
+   "title": "Fehler",
+   "desc": "Dieser Bildschirm konnte nicht angezeigt werden."
+  }
+ },
+ "gate": {
+  "welcome": {
+   "controls": {
+    "back": "Zurück",
+    "close": "Schließen",
+    "next": "Weiter"
+   },
+   "intro": {
+    "title": "Willkommen bei :name!",
+    "message": "Mit :name kannst du deine Erfahrungen im Spiel mit Leuten aus der ganzen Welt teilen."
+   },
+   "about": {
+    "title": "Über :name",
+    "message1": ":name ist eine Nachbildung von Protaverse von Fans für Fans.",
+    "message2": "Da dies eine Nachahmung ist, hat es möglicherweise nicht die gleichen Funktionen wie das verstorbene Protaverse und wir arbeiten daran, sie so schnell wie möglich verfügbar zu machen."
+   },
+   "config": {
+    "title": "Deinen :name-Account konfigurieren",
+    "message": "Wir benötigen einige Daten von dir, bevor du :name nutzen kannst.",
+    "display_name": "Anzeigename",
+    "nnid": "Nintendo Network ID",
+    "nnid_label": "Wir verwenden deine Nintendo Network ID, um dein Mii-Bild abzurufen."
+   },
+   "finish": {
+    "title": "Viel Spaß bei :name!",
+    "start": "Start"
+   }
+  },
+  "welcome_guest": {
+   "title": ":name ist eine Gaming-Community, die Menschen aus der ganzen Welt mithilfe von Mii-Charakteren verbindet.<br>Nutze :name, um deine Spielerfahrungen zu teilen und Menschen aus der ganzen Welt kennenzulernen.",
+   "message": "Du benötigst eine Nintendo Network ID, um Beiträge zu erstellen oder ein Profil zu erstellen. Wähle ID verknüpfen, um eine neue oder vorhandene ID zu verknüpfen.",
+   "link": "ID verknüpfen",
+   "exit": "Beenden"
+  }
+ },
+ "post": {
+  "status": {
+   "spoiler": "Spoiler"
+  },
+  "content": {
+   "spoiler": {
+    "desc": "Dieser Beitrag enthält Spoiler.",
+    "button": "Beitrag anzeigen"
+   }
+  },
+  "meta": {
+   "empathies": "Yeahs",
+   "comments": "Kommentare"
+  },
+  "feelings": {
+   "normal": "Yeah!",
+   "happy": "Yeah!",
+   "like": "Yeah♥",
+   "surprised": "Yeah?!",
+   "frustrated": "Yeah...",
+   "puzzled": "Yeah..!",
+   "remove": "Yeah zurücknehmen"
+  }
+ },
+ "user": {
+  "profile": {
+   "header": {
+    "name": ":name's Profil"
+   },
+   "meta": {
+    "violation": {
+     "select": "Bitte triff eine Auswahl.",
+     "create": "Melden",
+     "blacklist": "Blockieren"
+    },
+    "follow": "Folgen",
+    "unfollow": "Entfolgen",
+    "mymenu": "Nutzermenü",
+    "settings": "Profileinstellungen",
+    "back": "Nach oben"
+   },
+   "nav": {
+    "posts": "Beiträge",
+    "empathies": "Yeahs",
+    "following": "Ich folge",
+    "followers": "Follower"
+   },
+   "content": {
+    "favorite": "Lieblings-Communities"
+   },
+   "error": {
+    "noposts": "Dieser Nutzer hat noch nicht gepostet."
+   }
+  },
+  "menu": {
+   "header": {
+    "desc": "Hier kannst du verschiedene Einstellungen ändern, nach anderen Nutzern suchen, und mehr.",
+    "title": "Nutzermenü"
+   },
+   "buttons": {
+    "settings": ":service-Einstellungen",
+    "blacklist": "Blockierte Nutzer",
+    "announcements": ":service-Ankündigungen",
+    "help": "Anleitung/:service-Verhaltensregeln"
+   }
+  }
+ },
+ "aqua": {
+  "language": "de",
+  "portal": {
+   "community": {
+    "no_posts": "In dieser Community wurden noch keine Beiträge veröffentlicht. Möchtest du den ersten verfassen?",
+    "popular_communities": "Beliebte Communitys",
+    "post": {
+     "post_body_placeholder": "Teile deine Gedanken mit dieser Community!"
+    }
+   },
+   "news": {
+    "content": {
+     "gave_yeah": "gab ein Yeah für",
+     "your_post": "deinen Beitrag"
+    },
+    "header": "Mitteilungen",
+    "no_news": "Du hast noch keine neuen Mitteilungen.",
+    "tutorial": "Unter Mitteilungen erfährst du, wie andere auf deine Beiträge oder Kommentare reagiert haben, und siehst offene Freundschaftsanfragen. Bei neuen Mitteilungen erscheint ein orangefarbenes Symbol."
+   }
+  }
+ },
+ "protarium": {
+  "activity": {
+   "description": "Beiträge deiner Freunde und der Nutzer, denen du folgst, werden hier angezeigt.",
+   "empty_description": "Füge Freunde hinzu oder folge Nutzern, damit hier Beiträge erscheinen.",
+   "empty_title": "Noch keine Aktivitäten.",
+   "page_title": "Aktivitäten"
+  },
+  "appeals": {
+   "notification_title": "Entscheidung zu deinem Einspruch"
+  },
+  "moderation": {
+   "removed_notification": "Beitrag von einem Moderator gelöscht"
+  },
+  "notifications": {
+   "admin_warning": "Administratorwarnung",
+   "commented_post": "hat deinen Beitrag kommentiert.",
+   "followed_you": "folgt dir jetzt.",
+   "replied_discussion": "hat auf eine Diskussion geantwortet, an der du teilgenommen hast."
+  },
+  "post": {
+   "comment_action": "Kommentieren",
+   "comment_cancel": "Abbrechen",
+   "comment_placeholder": "Schreibe deinen Kommentar..."
+  }
+ },
+ "js": {
+  "n_added": [
+   "%s Personen haben diesem Beitrag ein Yeah gegeben.",
+   "%s Person hat diesem Beitrag ein Yeah gegeben."
+  ],
+  "you_added": "Du hast diesem Beitrag ein Yeah gegeben.",
+  "you_and_n_added": [
+   "Du und %s weitere Personen haben diesem Beitrag ein Yeah gegeben.",
+   "Du und %s weitere Person haben diesem Beitrag ein Yeah gegeben."
+  ]
+ }
+}
